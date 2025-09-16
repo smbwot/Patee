@@ -5,6 +5,6 @@ async function loadPart(target, file, position = "beforeend") {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadPart(document.body, "/header.html", "afterbegin"); // top of <body>
-  loadPart(document.body, "/footer.html", "beforeend");  // bottom of <body>
+  loadPart(document.body, "./header.html", "afterbegin"); // top of <body>
+  loadPart(document.body, "./footer.html", "beforeend");  // bottom of <body>
 });
