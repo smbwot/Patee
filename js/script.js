@@ -28,16 +28,42 @@ function renderProducts(products, containerSelector, badgeText, badgeClass) {
     });
 
     addColorClickEvents(container);
+    addCartClickEvents(container);
 }
-function SaveCart(product) {
+function getCartItems() {
     try {
-        const cart = [];
-        cart = JSON.parse(localStorage.getItem("cart"));
-        return true;
+        return JSON.parse(localStorage.getItem('cart_items') || '[]')
     } catch {
-        console.log("loi me r");
-        return false;
+        return [];
     }
+}
+function setCartItems(items) {
+    localStorage.setItem('cart_items', JSON.stringify(items))
+}
+
+function addItemToCart(newItem) {
+    const currItems = getCartItems();
+
+    // Tìm sản phẩm đã có trong giỏ hàng dựa trên id
+    const foundIndex = currItems.findIndex(item => Number(item.id) === Number(newItem.id));
+    if (foundIndex !== -1) {
+        // Nếu đã có, cộng thêm số lượng
+        const existingProduct = currItems[foundIndex];
+        const currQty = Number(existingProduct.qty || 1);
+        const addQty = Number(newItem.qty || 1);
+        existingProduct.qty = currQty + addQty;
+    } else {
+        // Nếu chưa có, thêm mới vào giỏ hàng
+        currItems.push({
+            id: newItem.id,
+            name: newItem.name,
+            price: Number(newItem.price || 0),
+            image: newItem.image || '',
+            qty: Number(newItem.qty || 1)
+        });
+    }
+    console.log(currItems);
+    setCartItems(currItems);
 }
 
 function createProductCard(product, badgeText, badgeClass) {
@@ -57,20 +83,20 @@ function createProductCard(product, badgeText, badgeClass) {
                     <span class="badge ${badgeClass}">${badgeText}</span>
                 </div>
                 <div class="product-image-container">
-                    <img src="${product.image}" alt="${product.title}" class="product-image">
+                    <img src="${product.img || product.image || ''}" alt="${product.name || ''}" class="product-image">
+
                     <div class="product-overlay">
                         <div class="overlay-content">
                             <a href="#" class="btn btn-outline-light btn-sm mb-2"><i class="bi bi-eye"></i> Xem nhanh</a>
-                            <a href="#" class="btn btn-light btn-sm"><i class="bi bi-cart"></i> Mua ngay</a>
-                            
+                            <a href="#" class="btn btn-light btn-sm btn-add-to-cart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.img || product.image || ''}"><i class="bi bi-cart"></i> Mua ngay</a>
                         </div>
                     </div>
                 </div>
                 <div class="product-info">
-                    <h6 class="product-title">${product.title}</h6>
+                    <h6 class="product-title">${product.name }</h6>
                     <div class="product-price">
-                        ${product.originalPrice ? `<span class="price old-price">${product.originalPrice}</span>` : ""}
-                        <span class="price sale-price">${product.currentPrice ? product.currentPrice : ""}</span>
+
+                        <span class="price sale-price">${product.price != null ? new Intl.NumberFormat('vi-VN').format(product.price) : ""}</span>
                     </div>
                     <div class="color-options">${colors}</div>
                 </div>
@@ -99,7 +125,21 @@ function addColorClickEvents(container) {
     });
 }
 
+function addCartClickEvents(container) {
+    const buttons = container.querySelectorAll(".btn-add-to-cart")
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            const id = btn.getAttribute("data-id");
+            const name = btn.getAttribute("data-name");
+            const price = Number(btn.getAttribute("data-price") || 0);
+            const image = btn.getAttribute("data-image");
+            addItemToCart({id: id, name: name, price: price, image: image, qty: 1});
+            window.location.href = "./cart.html";
+        })
+    })
 
+}
 // Counter
 class CountdownTimer {
     constructor() {
