@@ -2,19 +2,19 @@
 function loadProducts() {
     // SALE products
     fetch("./data/saleProducts.json")
-        .then(function(response) {
+        .then(function (response) {
             return response.json();
         })
-        .then(function(saleProducts) {
+        .then(function (saleProducts) {
             renderProducts(saleProducts, "#sale-items .products-json", "SALE", "bg-danger");
         });
 
     // NEW products
     fetch("./data/newProducts.json")
-        .then(function(response) {
+        .then(function (response) {
             return response.json();
         })
-        .then(function(newProducts) {
+        .then(function (newProducts) {
             renderProducts(newProducts, "#new-items .products-json", "HÀNG ĐÃ VỀ", "bg-success");
         });
 }
@@ -25,7 +25,7 @@ function renderProducts(products, containerSelector, badgeText, badgeClass) {
 
     container.innerHTML = "";
 
-    products.forEach(function(product) {
+    products.forEach(function (product) {
         const card = createProductCard(product, badgeText, badgeClass);
         container.insertAdjacentHTML("beforeend", card);
     });
@@ -38,7 +38,7 @@ function createProductCard(product, badgeText, badgeClass) {
     let colors = "";
     let productColors = product.colors ? product.colors : [];
 
-    productColors.forEach(function(color, index) {
+    productColors.forEach(function (color, index) {
         let activeClass = index === 0 ? "active" : "";
         colors += `<span class="color-swatch ${activeClass}" style="background-color:${color};"></span>`;
     });
@@ -77,12 +77,12 @@ function createProductCard(product, badgeText, badgeClass) {
 function addColorClickEvents(container) {
     const swatches = container.querySelectorAll(".color-swatch");
 
-    swatches.forEach(function(swatch) {
-        swatch.addEventListener("click", function() {
+    swatches.forEach(function (swatch) {
+        swatch.addEventListener("click", function () {
             const parent = swatch.parentNode;
             const allSwatches = parent.querySelectorAll(".color-swatch");
 
-            allSwatches.forEach(function(s) {
+            allSwatches.forEach(function (s) {
                 s.classList.remove("active");
             });
 
@@ -136,22 +136,22 @@ class CountdownTimer {
 document.addEventListener("DOMContentLoaded", () => {
     loadProducts();
     new CountdownTimer();
-});
 
-// Back to top button
-let backToTop = document.querySelector(".back-to-top");
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 500) {
-        backToTop.classList.add('show');
-    }
-    else {
-        backToTop.classList.remove('show');
-    }
-});
-backToTop.addEventListener('click', function (e) {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
+    // Back to top button
+    let backToTop = document.querySelector(".back-to-top");
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 500) {
+            backToTop.classList.add('show');
+        }
+        else {
+            backToTop.classList.remove('show');
+        }
+    });
+    backToTop.addEventListener('click', function (e) {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        })
     })
-})
+});
