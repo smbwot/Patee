@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Sản Phẩm</title>
+  <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+  <link rel="stylesheet" href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./mylinh.css"> <!-- Đổi tên file CSS nếu cần -->
+</head>
+
+<body>
+  <header>
+    <h1>Đồ Bé Trai </h1>
+  </header>
+
+  <main class="main-layout">
+    <!-- Bộ lọc bên trái -->
+    <aside class="filters">
+      <label>Kích thước:
+        <select>
+          <option>Tất cả</option>
+          <option>13-18</option>
+          <option>18-25</option>
+          <option>25-34</option>
+        </select>
+      </label>
+      <label>Giá:
+        <select>
+          <option>Tất cả</option>
+          <option>Dưới 150k</option>
+          <option>150k - 180k</option>
+          <option>180k - 500k</option>
+          <option>Trên 500k</option>
+        </select>
+      </label>
+      <label>Chất liệu:
+        <select>
+          <option>Tất cả</option>
+          <option>Thun</option>
+          <option>Dạ</option>
+          <option>Lanh</option>
+          <option>cotton</option>
+        </select>
+      </label>
+    </aside>
+
+    <!-- Lưới sản phẩm bên phải -->
+    <section class="product-grid">
+      <div class="product-card">
+        <img src="./ảnh/v nam 1.jpg" alt="Bộ vest nâu">
+        <h3> Bộ vest bé trai tổng tài màu nâu</h3>
+        <p class="price">289.000₫ <span class="old-price">457.000₫</span></p>
+        <button class="buy-button">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <img src="./ảnh/v nam 2.jpg" alt="Bộ vest xám">
+        <h3>Bộ vest xám quần sooc xám</h3>
+        <p class="price">249.000₫ <span class="old-price">399.000₫</span></p>
+        <button class="buy-button">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <img src="./ảnh/v nam 3.jpg" alt="Bộ đồ cộc">
+        <h3>Bộ đồ cộc phong cách cho bé trai</h3>
+        <p class="price">165.000₫ <span class="old-price">185.000₫</span></p>
+        <button class="buy-button">Mua ngay</button>
+      </div>
+      <div class="product-card">
+        <img src="./ảnh/v nam4.jpg" alt="Bộ đồ xanh">
+        <h3>Bộ đồ xanh cho bé trai</h3>
+        <p class="price">199.000₫ <span class="old-price">300.000₫</span></p>
+        <button class="buy-button">Mua ngay</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+    <script src="../js/script.js" defer></script>
+    <script src="../js/load-components.js"></script>
+    <script src="../assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

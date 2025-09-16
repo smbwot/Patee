@@ -12,193 +12,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-        <div class="container-fluid px-3 px-lg-4">
-            <!-- Mobile Menu Toggle -->
-            <!-- <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
-                <i class="bi bi-list me-1"></i>
-                <span class="fw-bold">MENU</span>
-            </button> -->
-
-            <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <div class="rounded-circle">
-                    <img class="rounded-circle" src="./assets/images/logo.png" alt="logo"
-                        style="width: 110px; height: 110px;">
-                </div>
-            </a>
-
-            <!-- Navigation Menu -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- Desktop Menu -->
-                <ul class="navbar-nav mx-auto d-none d-lg-flex">
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-danger text-uppercase" href="#new-items">
-                            <i class="bi bi-star me-1"></i>Hàng mới về
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="#sale-items">
-                            Sale
-                            <!-- <i class="bi bi-chevron-down ms-1"></i> -->
-                        </a>
-                        <!-- <ul class="dropdown-menu border-0 shadow">
-                                <li><a class="dropdown-item" href="#">Sale 50%</a></li>
-                                <li><a class="dropdown-item" href="#">Sale 30%</a></li>
-                                <li><a class="dropdown-item" href="#">Sale 20%</a></li>
-                            </ul> -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold text-uppercase" href="#">
-                            Đồ đôi
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold text-uppercase" href="#" data-bs-toggle="dropdown">
-                            Đồ gia đình
-                            <i class="bi bi-chevron-down ms-1"></i>
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow">
-                            <li><a class="dropdown-item" href="#">Set gia đình</a></li>
-                            <li><a class="dropdown-item" href="#">Mẹ và bé</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold text-uppercase" href="#" data-bs-toggle="dropdown">
-                            Trẻ em
-                            <i class="bi bi-chevron-down ms-1"></i>
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow">
-                            <li><a class="dropdown-item" href="#">Bé gái</a></li>
-                            <li><a class="dropdown-item" href="#">Bé trai</a></li>
-                        </ul>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fw-bold text-uppercase" href="#" data-bs-toggle="dropdown">
-                            Nam
-                            <i class="bi bi-chevron-down ms-1"></i>
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow">
-                            <li><a class="dropdown-item" href="#">Áo nam</a></li>
-                            <li><a class="dropdown-item" href="#">Quần nam</a></li>
-                        </ul>
-                    </li> -->
-                </ul>
-
-                <!-- Mobile Menu -->
-                <ul class="navbar-nav d-lg-none mobile-menu">
-                    <li class="nav-item">
-                        <a class="nav-link py-3 border-bottom" href="#">
-                            <i class="bi bi-star me-2"></i>Hàng mới về
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 border-bottom" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#saleMenu">
-                            Sale <i class="bi bi-chevron-down float-end"></i>
-                        </a>
-                        <div class="collapse" id="saleMenu">
-                            <div class="bg-light">
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Sale 50%</a>
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Sale 30%</a>
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Sale 20%</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 border-bottom" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#womenMenu">
-                            Nữ <i class="bi bi-chevron-down float-end"></i>
-                        </a>
-                        <div class="collapse" id="womenMenu">
-                            <div class="bg-light">
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Áo nữ</a>
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Quần nữ</a>
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Váy đầm</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 border-bottom" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#middleAgeMenu">
-                            Trung niên <i class="bi bi-chevron-down float-end"></i>
-                        </a>
-                        <div class="collapse" id="middleAgeMenu">
-                            <div class="bg-light">
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Áo trung
-                                    niên</a>
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Quần trung
-                                    niên</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 border-bottom" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#kidsMenu">
-                            Trẻ em <i class="bi bi-chevron-down float-end"></i>
-                        </a>
-                        <div class="collapse" id="kidsMenu">
-                            <div class="bg-light">
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Áo trẻ em</a>
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Quần trẻ
-                                    em</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 border-bottom" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#menMenu">
-                            Nam <i class="bi bi-chevron-down float-end"></i>
-                        </a>
-                        <div class="collapse" id="menMenu">
-                            <div class="bg-light">
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Áo nam</a>
-                                <a class="d-block py-2 px-4 text-decoration-none text-muted" href="#">Quần nam</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3 border-bottom" href="#">Cửa hàng</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link py-3" href="#">Tin tức</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Right Side Icons -->
-            <div class="d-flex align-items-center ms-auto">
-                <!-- Desktop Search -->
-                <div class="search-container d-none d-lg-flex me-3">
-                    <input type="text" class="form-control search-input" placeholder="Bạn tìm gì hôm nay">
-                    <button class="btn search-btn" type="button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-
-                <!-- Mobile Search -->
-                <button class="btn btn-link text-success p-2 d-lg-none" type="button">
-                    <i class="bi bi-search fs-5"></i>
-                </button>
-
-                <!-- User Icon -->
-                <button class="btn btn-link text-success p-2 me-1" type="button">
-                    <i class="bi bi-person fs-5"></i>
-                </button>
-
-                <!-- Cart Icon -->
-                <button class="btn btn-link text-success p-2 position-relative" type="button">
-                    <i class="bi bi-bag fs-5"></i>
-                    <span
-                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark cart-count">
-                        0
-                    </span>
-                </button>
-            </div>
-        </div>
-    </nav>
-
     <section class="banner-section">
         <div class="container-fluid my-3">
             <div class="row g-3">
@@ -342,10 +155,6 @@
 
     </section>
 
-    <footer class="footer">
-
-    </footer>
-
     <div class="social-buttons">
         <a href="#">
             <img src="./assets/images/facebook.svg" alt="Facebook">
@@ -358,7 +167,6 @@
         </a>
     </div>
 
-
     <div class="back-to-top">
         <i class="bi bi-arrow-up"></i>
     </div>
@@ -366,6 +174,8 @@
     <!-- Scripts -->
     <script src="./js/script.js" defer></script>
     <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/load-components.js"></script>
 </body>
 
 </html>
