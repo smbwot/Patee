@@ -1,3 +1,5 @@
+console.log("Script loaded ✅");
+
 // Import Products JSON
 function loadProducts() {
     // SALE products
