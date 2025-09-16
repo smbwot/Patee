@@ -2,21 +2,16 @@ console.log("Script loaded ✅");
 
 // Import Products JSON
 function loadProducts() {
-    // SALE products
-    fetch("./data/saleProducts.json")
+    // Load all products once, then split by isSale
+    fetch("./data/products.json")
         .then(function (response) {
             return response.json();
         })
-        .then(function (saleProducts) {
-            renderProducts(saleProducts, "#sale-items .products-json", "SALE", "bg-danger");
-        });
+        .then(function (allProducts) {
+            const saleProducts = allProducts.filter(function (p) { return !!p.isSale; });
+            const newProducts = allProducts.filter(function (p) { return !p.isSale; });
 
-    // NEW products
-    fetch("./data/newProducts.json")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (newProducts) {
+            renderProducts(saleProducts, "#sale-items .products-json", "SALE", "bg-danger");
             renderProducts(newProducts, "#new-items .products-json", "HÀNG ĐÃ VỀ", "bg-success");
         });
 }
@@ -33,6 +28,16 @@ function renderProducts(products, containerSelector, badgeText, badgeClass) {
     });
 
     addColorClickEvents(container);
+}
+function SaveCart(product) {
+    try {
+        const cart = [];
+        cart = JSON.parse(localStorage.getItem("cart"));
+        return true;
+    } catch {
+        console.log("loi me r");
+        return false;
+    }
 }
 
 function createProductCard(product, badgeText, badgeClass) {
@@ -57,6 +62,7 @@ function createProductCard(product, badgeText, badgeClass) {
                         <div class="overlay-content">
                             <a href="#" class="btn btn-outline-light btn-sm mb-2"><i class="bi bi-eye"></i> Xem nhanh</a>
                             <a href="#" class="btn btn-light btn-sm"><i class="bi bi-cart"></i> Mua ngay</a>
+                            
                         </div>
                     </div>
                 </div>

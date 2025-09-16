@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="container my-4">
+        <h1 class="mb-4">Giỏ hàng</h1>
+        <div id="cart-empty" class="alert alert-info d-none">Giỏ hàng trống.</div>
+        <div id="cart-items" class="list-group mb-3"></div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-bold">Tổng: <span id="cart-total">0₫</span></div>
+            <div>
+                <a href="index.html" class="btn btn-outline-secondary me-2">Tiếp tục mua sắm</a>
+                <button id="checkout-btn" class="btn btn-success" disabled>Thanh toán</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+    (function() {
+        const cartKey = 'patee_cart_items';
+        const listEl = document.getElementById('cart-items');
+        const emptyEl = document.getElementById('cart-empty');
+        const totalEl = document.getElementById('cart-total');
+        const checkoutBtn = document.getElementById('checkout-btn');
+
+        function format(price) {
+            try { return new Intl.NumberFormat('vi-VN').format(price) + '₫'; } catch(e) { return price + '₫'; }
+        }
+
+        function render() {
+            const items = JSON.parse(localStorage.getItem(cartKey) || '[]');
+            listEl.innerHTML = '';
+            if (!items.length) {
+                emptyEl.classList.remove('d-none');
+                checkoutBtn.disabled = true;
+                totalEl.textContent = '0₫';
+                return;
+            }
+            emptyEl.classList.add('d-none');
+            checkoutBtn.disabled = false;
+            let total = 0;
+            items.forEach((item, idx) => {
+                const price = Number(item.price || 0) * Number(item.qty || 1);
+                total += price;
+                const row = document.createElement('div');
+                row.className = 'list-group-item d-flex align-items-center justify-content-between';
+                row.innerHTML = `
+                    <div class="d-flex align-items-center">
+                        <img src="${item.image || ''}" alt="${item.name || ''}" class="me-3 rounded" style="width:60px;height:60px;object-fit:cover;${item.image?'':'display:none'}">
+                        <div>
+                            <div class="fw-semibold">${item.name || 'Sản phẩm'}</div>
+                            <div class="text-muted small">${format(item.price || 0)} x 
+                                <input type="number" min="1" value="${item.qty || 1}" data-idx="${idx}" class="form-control d-inline-block" style="width:70px"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="me-3 fw-semibold">${format(price)}</span>
+                        <button class="btn btn-sm btn-outline-danger" data-remove="${idx}"><i class="bi bi-trash"></i></button>
+                    </div>`;
+                listEl.appendChild(row);
+            });
+            totalEl.textContent = format(total);
+        }
+
+        listEl.addEventListener('input', (e) => {
+            const idx = e.target.getAttribute('data-idx');
+            if (idx == null) return;
+            const items = JSON.parse(localStorage.getItem(cartKey) || '[]');
+            const qty = Math.max(1, Number(e.target.value || 1));
+            items[idx].qty = qty;
+            localStorage.setItem(cartKey, JSON.stringify(items));
+            render();
+        });
+
+        listEl.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-remove]');
+            if (!btn) return;
+            const idx = Number(btn.getAttribute('data-remove'));
+            const items = JSON.parse(localStorage.getItem(cartKey) || '[]');
+            items.splice(idx, 1);
+            localStorage.setItem(cartKey, JSON.stringify(items));
+            render();
+        });
+
+        document.addEventListener('DOMContentLoaded', render);
+    })();
+    </script>
+
+    <script src="./js/load-components.js"></script>
+    <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+

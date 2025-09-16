@@ -1,545 +1,903 @@
-[
-  {
-    "id": 1,
-    "name": "Áo Len Nam Cao Cấp",
-    "category": "Ông",
-    "price": 320000,
-    "img": "./assets/images/grandfather1.jpg",
-    "description": "Áo len nam giữ ấm, phong cách thanh lịch cho ông.",
-    "colors": ["#000000", "#808080", "#2c3e50", "#556b2f"]
-  },
-  {
-    "id": 2,
-    "name": "Áo Sơ Mi Nam Dài Tay",
-    "category": "Ông",
-    "price": 280000,
-    "img": "./assets/images/grandfather2.jpg",
-    "description": "Áo sơ mi dài tay cổ điển, thích hợp mặc đi chơi và đi tiệc.",
-    "colors": ["#ffffff", "#87ceeb", "#4682b4", "#708090"]
-  },
-  {
-    "id": 3,
-    "name": "Quần Tây Nam",
-    "category": "Ông",
-    "price": 350000,
-    "img": "./assets/images/grandfather3.jpg",
-    "description": "Quần tây nam lịch sự, chất liệu thoáng mát.",
-    "colors": ["#000000", "#2f4f4f", "#808080", "#a9a9a9"]
-  },
-  {
-    "id": 4,
-    "name": "Áo Gile Len",
-    "category": "Ông",
-    "price": 260000,
-    "img": "./assets/images/grandfather4.jpg",
-    "description": "Áo gile len cổ điển, phối hợp dễ dàng với sơ mi.",
-    "colors": ["#8b4513", "#d2b48c", "#deb887", "#a0522d"]
-  },
-  {
-    "id": 5,
-    "name": "Áo Polo Nam",
-    "category": "Ông",
-    "price": 240000,
-    "img": "./assets/images/grandfather5.jpg",
-    "description": "Áo polo nam, đơn giản, thoải mái hằng ngày.",
-    "colors": ["#000080", "#008000", "#ffffff", "#ff0000"]
-  },
-  {
-    "id": 6,
-    "name": "Áo Khoác Dạ Nam",
-    "category": "Ông",
-    "price": 480000,
-    "img": "./assets/images/grandfather6.jpg",
-    "description": "Áo khoác dạ sang trọng, phù hợp với mùa đông.",
-    "colors": ["#2f4f4f", "#000000", "#708090", "#a9a9a9"]
-  },
-  {
-    "id": 7,
-    "name": "Quần Kaki Nam",
-    "category": "Ông",
-    "price": 300000,
-    "img": "./assets/images/grandfather7.jpg",
-    "description": "Quần kaki thoải mái, dễ phối cùng sơ mi.",
-    "colors": ["#deb887", "#a0522d", "#8b4513", "#d2b48c"]
-  },
-  {
-    "id": 8,
-    "name": "Áo Khoác Len Nam",
-    "category": "Ông",
-    "price": 360000,
-    "img": "./assets/images/grandfather8.jpg",
-    "description": "Áo khoác len ấm áp cho mùa đông.",
-    "colors": ["#808080", "#000000", "#2f4f4f", "#696969"]
-  },
-  {
-    "id": 9,
-    "name": "Áo Sơ Mi Kẻ Sọc",
-    "category": "Ông",
-    "price": 270000,
-    "img": "./assets/images/grandfather9.jpg",
-    "description": "Áo sơ mi kẻ sọc cổ điển, phong cách lịch lãm.",
-    "colors": ["#ffffff", "#000000", "#4682b4", "#2c3e50"]
-  },
-  {
-    "id": 10,
-    "name": "Áo Khoác Vest Nam",
-    "category": "Ông",
-    "price": 550000,
-    "img": "./assets/images/grandfather10.jpg",
-    "description": "Áo vest nam sang trọng, phong cách quý ông.",
-    "colors": ["#000000", "#2c3e50", "#696969", "#808080"]
-  },
-
-  {
-    "id": 11,
-    "name": "Áo Len Nữ Cao Cấp",
-    "category": "Bà",
-    "price": 340000,
-    "img": "./assets/images/grandmother1.jpg",
-    "description": "Áo len nữ giữ ấm, phong cách sang trọng cho bà.",
-    "colors": ["#800080", "#ff69b4", "#000000", "#ffffff"]
-  },
-  {
-    "id": 12,
-    "name": "Áo Sơ Mi Nữ Dài Tay",
-    "category": "Bà",
-    "price": 290000,
-    "img": "./assets/images/grandmother2.jpg",
-    "description": "Áo sơ mi nữ dài tay, phong cách thanh lịch.",
-    "colors": ["#ffffff", "#ff69b4", "#808080", "#000000"]
-  },
-  {
-    "id": 13,
-    "name": "Váy Hoa Nữ",
-    "category": "Bà",
-    "price": 370000,
-    "img": "./assets/images/grandmother3.jpg",
-    "description": "Váy hoa nhẹ nhàng, thích hợp dạo phố.",
-    "colors": ["#ff69b4", "#ffffff", "#ffd700", "#000000"]
-  },
-  {
-    "id": 14,
-    "name": "Áo Khoác Dạ Nữ",
-    "category": "Bà",
-    "price": 500000,
-    "img": "./assets/images/grandmother4.jpg",
-    "description": "Áo khoác dạ nữ sang trọng, giữ ấm mùa đông.",
-    "colors": ["#2c3e50", "#000000", "#696969", "#808080"]
-  },
-  {
-    "id": 15,
-    "name": "Áo Polo Nữ",
-    "category": "Bà",
-    "price": 260000,
-    "img": "./assets/images/grandmother5.jpg",
-    "description": "Áo polo nữ đơn giản, thoải mái mặc hằng ngày.",
-    "colors": ["#ff69b4", "#000000", "#ffffff", "#2c3e50"]
-  },
-  {
-    "id": 16,
-    "name": "Áo Gile Len Nữ",
-    "category": "Bà",
-    "price": 280000,
-    "img": "./assets/images/grandmother6.jpg",
-    "description": "Áo gile len nữ, phối hợp dễ dàng với sơ mi.",
-    "colors": ["#8b4513", "#d2b48c", "#deb887", "#a0522d"]
-  },
-  {
-    "id": 17,
-    "name": "Áo Khoác Len Nữ",
-    "category": "Bà",
-    "price": 370000,
-    "img": "./assets/images/grandmother7.jpg",
-    "description": "Áo khoác len nữ ấm áp, phong cách thanh lịch.",
-    "colors": ["#808080", "#000000", "#2f4f4f", "#696969"]
-  },
-  {
-    "id": 18,
-    "name": "Áo Blazer Nữ",
-    "category": "Bà",
-    "price": 450000,
-    "img": "./assets/images/grandmother8.jpg",
-    "description": "Áo blazer nữ sang trọng, lịch sự.",
-    "colors": ["#000000", "#2c3e50", "#696969", "#808080"]
-  },
-  {
-    "id": 19,
-    "name": "Váy Công Sở Nữ",
-    "category": "Bà",
-    "price": 390000,
-    "img": "./assets/images/grandmother9.jpg",
-    "description": "Váy công sở nữ thanh lịch.",
-    "colors": ["#ff69b4", "#ffffff", "#000000", "#2c3e50"]
-  },
-  {
-    "id": 20,
-    "name": "Áo Hoodie Nữ",
-    "category": "Bà",
-    "price": 310000,
-    "img": "./assets/images/grandmother10.jpg",
-    "description": "Áo hoodie nữ thoải mái, trẻ trung.",
-    "colors": ["#000000", "#ffffff", "#ff69b4", "#2c3e50"]
-  },
-  {
-    "id": 21,
-    "name": "Áo Sơ Mi Nam Trẻ Trung",
-    "category": "Cha",
-    "price": 320000,
-    "img": "./assets/images/father1.jpg",
-    "description": "Áo sơ mi nam lịch lãm, thoải mái khi đi làm.",
-    "colors": ["#ffffff", "#000000", "#2c3e50", "#4682b4"]
-  },
-  {
-    "id": 22,
-    "name": "Áo Polo Nam Ngắn Tay",
-    "category": "Cha",
-    "price": 250000,
-    "img": "./assets/images/father2.jpg",
-    "description": "Áo polo nam năng động, phù hợp đi chơi.",
-    "colors": ["#000080", "#ffffff", "#ff0000", "#008000"]
-  },
-  {
-    "id": 23,
-    "name": "Quần Jean Nam",
-    "category": "Cha",
-    "price": 400000,
-    "img": "./assets/images/father3.jpg",
-    "description": "Quần jean nam cá tính, thoải mái vận động.",
-    "colors": ["#000000", "#2f4f4f", "#1e90ff", "#696969"]
-  },
-  {
-    "id": 24,
-    "name": "Áo Khoác Jean Nam",
-    "category": "Cha",
-    "price": 450000,
-    "img": "./assets/images/father4.jpg",
-    "description": "Áo khoác jean nam trẻ trung, dễ phối đồ.",
-    "colors": ["#1e90ff", "#000000", "#2f4f4f", "#708090"]
-  },
-  {
-    "id": 25,
-    "name": "Áo Thun Nam Basic",
-    "category": "Cha",
-    "price": 200000,
-    "img": "./assets/images/father5.jpg",
-    "description": "Áo thun nam đơn giản, mặc hằng ngày.",
-    "colors": ["#ffffff", "#000000", "#ff4500", "#2c3e50"]
-  },
-  {
-    "id": 26,
-    "name": "Áo Hoodie Nam",
-    "category": "Cha",
-    "price": 370000,
-    "img": "./assets/images/father6.jpg",
-    "description": "Áo hoodie nam phong cách, thoải mái.",
-    "colors": ["#000000", "#ffffff", "#2f4f4f", "#808080"]
-  },
-  {
-    "id": 27,
-    "name": "Áo Vest Nam Công Sở",
-    "category": "Cha",
-    "price": 600000,
-    "img": "./assets/images/father7.jpg",
-    "description": "Áo vest nam sang trọng, phù hợp công việc.",
-    "colors": ["#000000", "#2c3e50", "#696969", "#808080"]
-  },
-  {
-    "id": 28,
-    "name": "Quần Short Nam",
-    "category": "Cha",
-    "price": 220000,
-    "img": "./assets/images/father8.jpg",
-    "description": "Quần short nam thoáng mát, thoải mái mùa hè.",
-    "colors": ["#2f4f4f", "#deb887", "#808080", "#000000"]
-  },
-  {
-    "id": 29,
-    "name": "Áo Khoác Thể Thao Nam",
-    "category": "Cha",
-    "price": 350000,
-    "img": "./assets/images/father9.jpg",
-    "description": "Áo khoác thể thao nam khỏe khoắn.",
-    "colors": ["#000000", "#ffffff", "#1e90ff", "#008000"]
-  },
-  {
-    "id": 30,
-    "name": "Áo Len Cổ Tròn Nam",
-    "category": "Cha",
-    "price": 330000,
-    "img": "./assets/images/father10.jpg",
-    "description": "Áo len cổ tròn giữ ấm, phong cách nam tính.",
-    "colors": ["#2c3e50", "#000000", "#808080", "#556b2f"]
-  },
-
-  {
-    "id": 31,
-    "name": "Áo Sơ Mi Nữ Công Sở",
-    "category": "Mẹ",
-    "price": 310000,
-    "img": "./assets/images/mother1.jpg",
-    "description": "Áo sơ mi nữ thanh lịch, thích hợp đi làm.",
-    "colors": ["#ffffff", "#000000", "#2c3e50", "#ff69b4"]
-  },
-  {
-    "id": 32,
-    "name": "Váy Dạ Hội Nữ",
-    "category": "Mẹ",
-    "price": 650000,
-    "img": "./assets/images/mother2.jpg",
-    "description": "Váy dạ hội nữ sang trọng, quý phái.",
-    "colors": ["#800080", "#000000", "#ffffff", "#ff69b4"]
-  },
-  {
-    "id": 33,
-    "name": "Quần Jean Nữ",
-    "category": "Mẹ",
-    "price": 380000,
-    "img": "./assets/images/mother3.jpg",
-    "description": "Quần jean nữ năng động, dễ phối đồ.",
-    "colors": ["#000000", "#1e90ff", "#2f4f4f", "#808080"]
-  },
-  {
-    "id": 34,
-    "name": "Áo Thun Nữ Basic",
-    "category": "Mẹ",
-    "price": 210000,
-    "img": "./assets/images/mother4.jpg",
-    "description": "Áo thun nữ đơn giản, thoải mái mặc hằng ngày.",
-    "colors": ["#ffffff", "#000000", "#ff69b4", "#2c3e50"]
-  },
-  {
-    "id": 35,
-    "name": "Áo Khoác Len Nữ",
-    "category": "Mẹ",
-    "price": 370000,
-    "img": "./assets/images/mother5.jpg",
-    "description": "Áo khoác len nữ giữ ấm, phong cách thanh lịch.",
-    "colors": ["#808080", "#000000", "#2f4f4f", "#696969"]
-  },
-  {
-    "id": 36,
-    "name": "Áo Hoodie Nữ",
-    "category": "Mẹ",
-    "price": 320000,
-    "img": "./assets/images/mother6.jpg",
-    "description": "Áo hoodie nữ trẻ trung, năng động.",
-    "colors": ["#000000", "#ffffff", "#ff69b4", "#2c3e50"]
-  },
-  {
-    "id": 37,
-    "name": "Áo Blazer Nữ",
-    "category": "Mẹ",
-    "price": 480000,
-    "img": "./assets/images/mother7.jpg",
-    "description": "Áo blazer nữ công sở thanh lịch.",
-    "colors": ["#000000", "#2c3e50", "#808080", "#696969"]
-  },
-  {
-    "id": 38,
-    "name": "Váy Maxi Nữ",
-    "category": "Mẹ",
-    "price": 420000,
-    "img": "./assets/images/mother8.jpg",
-    "description": "Váy maxi nữ nhẹ nhàng, thoáng mát.",
-    "colors": ["#ffffff", "#ff69b4", "#000000", "#87ceeb"]
-  },
-  {
-    "id": 39,
-    "name": "Quần Tây Nữ",
-    "category": "Mẹ",
-    "price": 360000,
-    "img": "./assets/images/mother9.jpg",
-    "description": "Quần tây nữ thanh lịch, dễ phối áo.",
-    "colors": ["#000000", "#808080", "#2c3e50", "#a9a9a9"]
-  },
-  {
-    "id": 40,
-    "name": "Áo Len Cổ Lọ Nữ",
-    "category": "Mẹ",
-    "price": 340000,
-    "img": "./assets/images/mother10.jpg",
-    "description": "Áo len cổ lọ giữ ấm, thời trang mùa đông.",
-    "colors": ["#2c3e50", "#000000", "#808080", "#556b2f"]
-  },
-  {
-    "id": 41,
-    "name": "Áo Thun Bé Trai",
-    "category": "Con Trai",
-    "price": 150000,
-    "img": "./assets/images/son1.jpg",
-    "description": "Áo thun bé trai thoải mái, thích hợp mặc hằng ngày.",
-    "colors": ["#ffffff", "#000000", "#1e90ff", "#ff4500"]
-  },
-  {
-    "id": 42,
-    "name": "Áo Polo Bé Trai",
-    "category": "Con Trai",
-    "price": 180000,
-    "img": "./assets/images/son2.jpg",
-    "description": "Áo polo bé trai năng động, dễ phối đồ.",
-    "colors": ["#000080", "#ffffff", "#008000", "#ff0000"]
-  },
-  {
-    "id": 43,
-    "name": "Quần Jean Bé Trai",
-    "category": "Con Trai",
-    "price": 220000,
-    "img": "./assets/images/son3.jpg",
-    "description": "Quần jean bé trai cá tính, bền đẹp.",
-    "colors": ["#000000", "#1e90ff", "#2f4f4f", "#808080"]
-  },
-  {
-    "id": 44,
-    "name": "Áo Khoác Thể Thao Bé Trai",
-    "category": "Con Trai",
-    "price": 250000,
-    "img": "./assets/images/son4.jpg",
-    "description": "Áo khoác thể thao cho bé trai khỏe khoắn.",
-    "colors": ["#000000", "#ffffff", "#1e90ff", "#008000"]
-  },
-  {
-    "id": 45,
-    "name": "Áo Hoodie Bé Trai",
-    "category": "Con Trai",
-    "price": 230000,
-    "img": "./assets/images/son5.jpg",
-    "description": "Áo hoodie bé trai ấm áp, dễ thương.",
-    "colors": ["#000000", "#ffffff", "#2f4f4f", "#808080"]
-  },
-  {
-    "id": 46,
-    "name": "Áo Sơ Mi Bé Trai",
-    "category": "Con Trai",
-    "price": 200000,
-    "img": "./assets/images/son6.jpg",
-    "description": "Áo sơ mi bé trai thanh lịch, gọn gàng.",
-    "colors": ["#ffffff", "#000000", "#4682b4", "#2c3e50"]
-  },
-  {
-    "id": 47,
-    "name": "Quần Short Bé Trai",
-    "category": "Con Trai",
-    "price": 170000,
-    "img": "./assets/images/son7.jpg",
-    "description": "Quần short bé trai thoải mái, dễ vận động.",
-    "colors": ["#2f4f4f", "#deb887", "#808080", "#000000"]
-  },
-  {
-    "id": 48,
-    "name": "Áo Vest Bé Trai",
-    "category": "Con Trai",
-    "price": 300000,
-    "img": "./assets/images/son8.jpg",
-    "description": "Áo vest bé trai lịch lãm, phong cách.",
-    "colors": ["#000000", "#2c3e50", "#696969", "#808080"]
-  },
-  {
-    "id": 49,
-    "name": "Áo Len Bé Trai",
-    "category": "Con Trai",
-    "price": 210000,
-    "img": "./assets/images/son9.jpg",
-    "description": "Áo len bé trai giữ ấm mùa đông.",
-    "colors": ["#2c3e50", "#000000", "#808080", "#556b2f"]
-  },
-  {
-    "id": 50,
-    "name": "Áo Khoác Jean Bé Trai",
-    "category": "Con Trai",
-    "price": 260000,
-    "img": "./assets/images/son10.jpg",
-    "description": "Áo khoác jean bé trai năng động.",
-    "colors": ["#1e90ff", "#000000", "#2f4f4f", "#708090"]
-  },
-
-  {
-    "id": 51,
-    "name": "Áo Thun Bé Gái",
-    "category": "Con Gái",
-    "price": 150000,
-    "img": "./assets/images/daughter1.jpg",
-    "description": "Áo thun bé gái dễ thương, thoải mái hằng ngày.",
-    "colors": ["#ffffff", "#ff69b4", "#000000", "#87ceeb"]
-  },
-  {
-    "id": 52,
-    "name": "Váy Hoa Bé Gái",
-    "category": "Con Gái",
-    "price": 220000,
-    "img": "./assets/images/daughter2.jpg",
-    "description": "Váy hoa bé gái xinh xắn, phù hợp đi chơi.",
-    "colors": ["#ff69b4", "#ffffff", "#ffd700", "#000000"]
-  },
-  {
-    "id": 53,
-    "name": "Áo Polo Bé Gái",
-    "category": "Con Gái",
-    "price": 180000,
-    "img": "./assets/images/daughter3.jpg",
-    "description": "Áo polo bé gái trẻ trung, năng động.",
-    "colors": ["#000080", "#ffffff", "#ff69b4", "#2c3e50"]
-  },
-  {
-    "id": 54,
-    "name": "Quần Jean Bé Gái",
-    "category": "Con Gái",
-    "price": 230000,
-    "img": "./assets/images/daughter4.jpg",
-    "description": "Quần jean bé gái năng động, dễ phối áo.",
-    "colors": ["#000000", "#1e90ff", "#2f4f4f", "#808080"]
-  },
-  {
-    "id": 55,
-    "name": "Áo Khoác Thể Thao Bé Gái",
-    "category": "Con Gái",
-    "price": 250000,
-    "img": "./assets/images/daughter5.jpg",
-    "description": "Áo khoác thể thao bé gái khỏe khoắn, dễ thương.",
-    "colors": ["#000000", "#ffffff", "#ff69b4", "#87ceeb"]
-  },
-  {
-    "id": 56,
-    "name": "Áo Hoodie Bé Gái",
-    "category": "Con Gái",
-    "price": 240000,
-    "img": "./assets/images/daughter6.jpg",
-    "description": "Áo hoodie bé gái ấm áp, thời trang.",
-    "colors": ["#000000", "#ffffff", "#ff69b4", "#2c3e50"]
-  },
-  {
-    "id": 57,
-    "name": "Áo Sơ Mi Bé Gái",
-    "category": "Con Gái",
-    "price": 200000,
-    "img": "./assets/images/daughter7.jpg",
-    "description": "Áo sơ mi bé gái thanh lịch, gọn gàng.",
-    "colors": ["#ffffff", "#000000", "#ff69b4", "#2c3e50"]
-  },
-  {
-    "id": 58,
-    "name": "Quần Short Bé Gái",
-    "category": "Con Gái",
-    "price": 170000,
-    "img": "./assets/images/daughter8.jpg",
-    "description": "Quần short bé gái thoải mái, dễ vận động.",
-    "colors": ["#2f4f4f", "#deb887", "#808080", "#000000"]
-  },
-  {
-    "id": 59,
-    "name": "Áo Len Bé Gái",
-    "category": "Con Gái",
-    "price": 210000,
-    "img": "./assets/images/daughter9.jpg",
-    "description": "Áo len bé gái giữ ấm mùa đông.",
-    "colors": ["#2c3e50", "#000000", "#808080", "#556b2f"]
-  },
-  {
-    "id": 60,
-    "name": "Áo Khoác Jean Bé Gái",
-    "category": "Con Gái",
-    "price": 260000,
-    "img": "./assets/images/daughter10.jpg",
-    "description": "Áo khoác jean bé gái cá tính.",
-    "colors": ["#1e90ff", "#000000", "#2f4f4f", "#708090"]
-  }
+﻿[
+    {
+        "id":  1,
+        "name":  "Áo Len Nam Cao Cấp",
+        "category":  "Ông",
+        "price":  320000,
+        "img":  "./assets/images/grandfather1.jpg",
+        "description":  "Áo len nam giữ ấm, phong cách thanh lịch cho ông.",
+        "colors":  [
+                       "#000000",
+                       "#808080",
+                       "#2c3e50",
+                       "#556b2f"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  2,
+        "name":  "Áo Sơ Mi Nam Dài Tay",
+        "category":  "Ông",
+        "price":  280000,
+        "img":  "./assets/images/grandfather2.jpg",
+        "description":  "Áo sơ mi dài tay cổ điển, thích hợp mặc đi chơi và đi tiệc.",
+        "colors":  [
+                       "#ffffff",
+                       "#87ceeb",
+                       "#4682b4",
+                       "#708090"
+                   ],
+        "isSale":  false
+    },
+    
+    {
+        "id":  3,
+        "name":  "Quần Tây Nam",
+        "category":  "Ông",
+        "price":  350000,
+        "img":  "./assets/images/grandfather3.jpg",
+        "description":  "Quần tây nam lịch sự, chất liệu thoáng mát.",
+        "colors":  [
+                       "#000000",
+                       "#2f4f4f",
+                       "#808080",
+                       "#a9a9a9"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  4,
+        "name":  "Áo Gile Len",
+        "category":  "Ông",
+        "price":  260000,
+        "img":  "./assets/images/grandfather4.jpg",
+        "description":  "Áo gile len cổ điển, phối hợp dễ dàng với sơ mi.",
+        "colors":  [
+                       "#8b4513",
+                       "#d2b48c",
+                       "#deb887",
+                       "#a0522d"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  5,
+        "name":  "Áo Polo Nam",
+        "category":  "Ông",
+        "price":  240000,
+        "img":  "./assets/images/grandfather5.jpg",
+        "description":  "Áo polo nam, đơn giản, thoải mái hằng ngày.",
+        "colors":  [
+                       "#000080",
+                       "#008000",
+                       "#ffffff",
+                       "#ff0000"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  6,
+        "name":  "Áo Khoác Dạ Nam",
+        "category":  "Ông",
+        "price":  480000,
+        "img":  "./assets/images/grandfather6.jpg",
+        "description":  "Áo khoác dạ sang trọng, phù hợp với mùa đông.",
+        "colors":  [
+                       "#2f4f4f",
+                       "#000000",
+                       "#708090",
+                       "#a9a9a9"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  7,
+        "name":  "Quần Kaki Nam",
+        "category":  "Ông",
+        "price":  300000,
+        "img":  "./assets/images/grandfather7.jpg",
+        "description":  "Quần kaki thoải mái, dễ phối cùng sơ mi.",
+        "colors":  [
+                       "#deb887",
+                       "#a0522d",
+                       "#8b4513",
+                       "#d2b48c"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  8,
+        "name":  "Áo Khoác Len Nam",
+        "category":  "Ông",
+        "price":  360000,
+        "img":  "./assets/images/grandfather8.jpg",
+        "description":  "Áo khoác len ấm áp cho mùa đông.",
+        "colors":  [
+                       "#808080",
+                       "#000000",
+                       "#2f4f4f",
+                       "#696969"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  9,
+        "name":  "Áo Sơ Mi Kẻ Sọc",
+        "category":  "Ông",
+        "price":  270000,
+        "img":  "./assets/images/grandfather9.jpg",
+        "description":  "Áo sơ mi kẻ sọc cổ điển, phong cách lịch lãm.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#4682b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  10,
+        "name":  "Áo Khoác Vest Nam",
+        "category":  "Ông",
+        "price":  550000,
+        "img":  "./assets/images/grandfather10.jpg",
+        "description":  "Áo vest nam sang trọng, phong cách quý ông.",
+        "colors":  [
+                       "#000000",
+                       "#2c3e50",
+                       "#696969",
+                       "#808080"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  11,
+        "name":  "Áo Len Nữ Cao Cấp",
+        "category":  "Bà",
+        "price":  340000,
+        "img":  "./assets/images/grandmother1.jpg",
+        "description":  "Áo len nữ giữ ấm, phong cách sang trọng cho bà.",
+        "colors":  [
+                       "#800080",
+                       "#ff69b4",
+                       "#000000",
+                       "#ffffff"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  12,
+        "name":  "Áo Sơ Mi Nữ Dài Tay",
+        "category":  "Bà",
+        "price":  290000,
+        "img":  "./assets/images/grandmother2.jpg",
+        "description":  "Áo sơ mi nữ dài tay, phong cách thanh lịch.",
+        "colors":  [
+                       "#ffffff",
+                       "#ff69b4",
+                       "#808080",
+                       "#000000"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  13,
+        "name":  "Váy Hoa Nữ",
+        "category":  "Bà",
+        "price":  370000,
+        "img":  "./assets/images/grandmother3.jpg",
+        "description":  "Váy hoa nhẹ nhàng, thích hợp dạo phố.",
+        "colors":  [
+                       "#ff69b4",
+                       "#ffffff",
+                       "#ffd700",
+                       "#000000"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  14,
+        "name":  "Áo Khoác Dạ Nữ",
+        "category":  "Bà",
+        "price":  500000,
+        "img":  "./assets/images/grandmother4.jpg",
+        "description":  "Áo khoác dạ nữ sang trọng, giữ ấm mùa đông.",
+        "colors":  [
+                       "#2c3e50",
+                       "#000000",
+                       "#696969",
+                       "#808080"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  15,
+        "name":  "Áo Polo Nữ",
+        "category":  "Bà",
+        "price":  260000,
+        "img":  "./assets/images/grandmother5.jpg",
+        "description":  "Áo polo nữ đơn giản, thoải mái mặc hằng ngày.",
+        "colors":  [
+                       "#ff69b4",
+                       "#000000",
+                       "#ffffff",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  16,
+        "name":  "Áo Gile Len Nữ",
+        "category":  "Bà",
+        "price":  280000,
+        "img":  "./assets/images/grandmother6.jpg",
+        "description":  "Áo gile len nữ, phối hợp dễ dàng với sơ mi.",
+        "colors":  [
+                       "#8b4513",
+                       "#d2b48c",
+                       "#deb887",
+                       "#a0522d"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  17,
+        "name":  "Áo Khoác Len Nữ",
+        "category":  "Bà",
+        "price":  370000,
+        "img":  "./assets/images/grandmother7.jpg",
+        "description":  "Áo khoác len nữ ấm áp, phong cách thanh lịch.",
+        "colors":  [
+                       "#808080",
+                       "#000000",
+                       "#2f4f4f",
+                       "#696969"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  18,
+        "name":  "Áo Blazer Nữ",
+        "category":  "Bà",
+        "price":  450000,
+        "img":  "./assets/images/grandmother8.jpg",
+        "description":  "Áo blazer nữ sang trọng, lịch sự.",
+        "colors":  [
+                       "#000000",
+                       "#2c3e50",
+                       "#696969",
+                       "#808080"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  19,
+        "name":  "Váy Công Sở Nữ",
+        "category":  "Bà",
+        "price":  390000,
+        "img":  "./assets/images/grandmother9.jpg",
+        "description":  "Váy công sở nữ thanh lịch.",
+        "colors":  [
+                       "#ff69b4",
+                       "#ffffff",
+                       "#000000",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  20,
+        "name":  "Áo Hoodie Nữ",
+        "category":  "Bà",
+        "price":  310000,
+        "img":  "./assets/images/grandmother10.jpg",
+        "description":  "Áo hoodie nữ thoải mái, trẻ trung.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#ff69b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  21,
+        "name":  "Áo Sơ Mi Nam Trẻ Trung",
+        "category":  "Cha",
+        "price":  320000,
+        "img":  "./assets/images/father1.jpg",
+        "description":  "Áo sơ mi nam lịch lãm, thoải mái khi đi làm.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#2c3e50",
+                       "#4682b4"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  22,
+        "name":  "Áo Polo Nam Ngắn Tay",
+        "category":  "Cha",
+        "price":  250000,
+        "img":  "./assets/images/father2.jpg",
+        "description":  "Áo polo nam năng động, phù hợp đi chơi.",
+        "colors":  [
+                       "#000080",
+                       "#ffffff",
+                       "#ff0000",
+                       "#008000"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  23,
+        "name":  "Quần Jean Nam",
+        "category":  "Cha",
+        "price":  400000,
+        "img":  "./assets/images/father3.jpg",
+        "description":  "Quần jean nam cá tính, thoải mái vận động.",
+        "colors":  [
+                       "#000000",
+                       "#2f4f4f",
+                       "#1e90ff",
+                       "#696969"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  24,
+        "name":  "Áo Khoác Jean Nam",
+        "category":  "Cha",
+        "price":  450000,
+        "img":  "./assets/images/father4.jpg",
+        "description":  "Áo khoác jean nam trẻ trung, dễ phối đồ.",
+        "colors":  [
+                       "#1e90ff",
+                       "#000000",
+                       "#2f4f4f",
+                       "#708090"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  25,
+        "name":  "Áo Thun Nam Basic",
+        "category":  "Cha",
+        "price":  200000,
+        "img":  "./assets/images/father5.jpg",
+        "description":  "Áo thun nam đơn giản, mặc hằng ngày.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#ff4500",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  26,
+        "name":  "Áo Hoodie Nam",
+        "category":  "Cha",
+        "price":  370000,
+        "img":  "./assets/images/father6.jpg",
+        "description":  "Áo hoodie nam phong cách, thoải mái.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#2f4f4f",
+                       "#808080"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  27,
+        "name":  "Áo Vest Nam Công Sở",
+        "category":  "Cha",
+        "price":  600000,
+        "img":  "./assets/images/father7.jpg",
+        "description":  "Áo vest nam sang trọng, phù hợp công việc.",
+        "colors":  [
+                       "#000000",
+                       "#2c3e50",
+                       "#696969",
+                       "#808080"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  28,
+        "name":  "Quần Short Nam",
+        "category":  "Cha",
+        "price":  220000,
+        "img":  "./assets/images/father8.jpg",
+        "description":  "Quần short nam thoáng mát, thoải mái mùa hè.",
+        "colors":  [
+                       "#2f4f4f",
+                       "#deb887",
+                       "#808080",
+                       "#000000"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  29,
+        "name":  "Áo Khoác Thể Thao Nam",
+        "category":  "Cha",
+        "price":  350000,
+        "img":  "./assets/images/father9.jpg",
+        "description":  "Áo khoác thể thao nam khỏe khoắn.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#1e90ff",
+                       "#008000"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  30,
+        "name":  "Áo Len Cổ Tròn Nam",
+        "category":  "Cha",
+        "price":  330000,
+        "img":  "./assets/images/father10.jpg",
+        "description":  "Áo len cổ tròn giữ ấm, phong cách nam tính.",
+        "colors":  [
+                       "#2c3e50",
+                       "#000000",
+                       "#808080",
+                       "#556b2f"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  31,
+        "name":  "Áo Sơ Mi Nữ Công Sở",
+        "category":  "Mẹ",
+        "price":  310000,
+        "img":  "./assets/images/mother1.jpg",
+        "description":  "Áo sơ mi nữ thanh lịch, thích hợp đi làm.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#2c3e50",
+                       "#ff69b4"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  32,
+        "name":  "Váy Dạ Hội Nữ",
+        "category":  "Mẹ",
+        "price":  650000,
+        "img":  "./assets/images/mother2.jpg",
+        "description":  "Váy dạ hội nữ sang trọng, quý phái.",
+        "colors":  [
+                       "#800080",
+                       "#000000",
+                       "#ffffff",
+                       "#ff69b4"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  33,
+        "name":  "Quần Jean Nữ",
+        "category":  "Mẹ",
+        "price":  380000,
+        "img":  "./assets/images/mother3.jpg",
+        "description":  "Quần jean nữ năng động, dễ phối đồ.",
+        "colors":  [
+                       "#000000",
+                       "#1e90ff",
+                       "#2f4f4f",
+                       "#808080"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  34,
+        "name":  "Áo Thun Nữ Basic",
+        "category":  "Mẹ",
+        "price":  210000,
+        "img":  "./assets/images/mother4.jpg",
+        "description":  "Áo thun nữ đơn giản, thoải mái mặc hằng ngày.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#ff69b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  35,
+        "name":  "Áo Khoác Len Nữ",
+        "category":  "Mẹ",
+        "price":  370000,
+        "img":  "./assets/images/mother5.jpg",
+        "description":  "Áo khoác len nữ giữ ấm, phong cách thanh lịch.",
+        "colors":  [
+                       "#808080",
+                       "#000000",
+                       "#2f4f4f",
+                       "#696969"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  36,
+        "name":  "Áo Hoodie Nữ",
+        "category":  "Mẹ",
+        "price":  320000,
+        "img":  "./assets/images/mother6.jpg",
+        "description":  "Áo hoodie nữ trẻ trung, năng động.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#ff69b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  37,
+        "name":  "Áo Blazer Nữ",
+        "category":  "Mẹ",
+        "price":  480000,
+        "img":  "./assets/images/mother7.jpg",
+        "description":  "Áo blazer nữ công sở thanh lịch.",
+        "colors":  [
+                       "#000000",
+                       "#2c3e50",
+                       "#808080",
+                       "#696969"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  38,
+        "name":  "Váy Maxi Nữ",
+        "category":  "Mẹ",
+        "price":  420000,
+        "img":  "./assets/images/mother8.jpg",
+        "description":  "Váy maxi nữ nhẹ nhàng, thoáng mát.",
+        "colors":  [
+                       "#ffffff",
+                       "#ff69b4",
+                       "#000000",
+                       "#87ceeb"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  39,
+        "name":  "Quần Tây Nữ",
+        "category":  "Mẹ",
+        "price":  360000,
+        "img":  "./assets/images/mother9.jpg",
+        "description":  "Quần tây nữ thanh lịch, dễ phối áo.",
+        "colors":  [
+                       "#000000",
+                       "#808080",
+                       "#2c3e50",
+                       "#a9a9a9"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  40,
+        "name":  "Áo Len Cổ Lọ Nữ",
+        "category":  "Mẹ",
+        "price":  340000,
+        "img":  "./assets/images/mother10.jpg",
+        "description":  "Áo len cổ lọ giữ ấm, thời trang mùa đông.",
+        "colors":  [
+                       "#2c3e50",
+                       "#000000",
+                       "#808080",
+                       "#556b2f"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  41,
+        "name":  "Áo Thun Bé Trai",
+        "category":  "Con Trai",
+        "price":  150000,
+        "img":  "./assets/images/son1.jpg",
+        "description":  "Áo thun bé trai thoải mái, thích hợp mặc hằng ngày.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#1e90ff",
+                       "#ff4500"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  42,
+        "name":  "Áo Polo Bé Trai",
+        "category":  "Con Trai",
+        "price":  180000,
+        "img":  "./assets/images/son2.jpg",
+        "description":  "Áo polo bé trai năng động, dễ phối đồ.",
+        "colors":  [
+                       "#000080",
+                       "#ffffff",
+                       "#008000",
+                       "#ff0000"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  43,
+        "name":  "Quần Jean Bé Trai",
+        "category":  "Con Trai",
+        "price":  220000,
+        "img":  "./assets/images/son3.jpg",
+        "description":  "Quần jean bé trai cá tính, bền đẹp.",
+        "colors":  [
+                       "#000000",
+                       "#1e90ff",
+                       "#2f4f4f",
+                       "#808080"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  44,
+        "name":  "Áo Khoác Thể Thao Bé Trai",
+        "category":  "Con Trai",
+        "price":  250000,
+        "img":  "./assets/images/son4.jpg",
+        "description":  "Áo khoác thể thao cho bé trai khỏe khoắn.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#1e90ff",
+                       "#008000"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  45,
+        "name":  "Áo Hoodie Bé Trai",
+        "category":  "Con Trai",
+        "price":  230000,
+        "img":  "./assets/images/son5.jpg",
+        "description":  "Áo hoodie bé trai ấm áp, dễ thương.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#2f4f4f",
+                       "#808080"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  46,
+        "name":  "Áo Sơ Mi Bé Trai",
+        "category":  "Con Trai",
+        "price":  200000,
+        "img":  "./assets/images/son6.jpg",
+        "description":  "Áo sơ mi bé trai thanh lịch, gọn gàng.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#4682b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  47,
+        "name":  "Quần Short Bé Trai",
+        "category":  "Con Trai",
+        "price":  170000,
+        "img":  "./assets/images/son7.jpg",
+        "description":  "Quần short bé trai thoải mái, dễ vận động.",
+        "colors":  [
+                       "#2f4f4f",
+                       "#deb887",
+                       "#808080",
+                       "#000000"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  48,
+        "name":  "Áo Vest Bé Trai",
+        "category":  "Con Trai",
+        "price":  300000,
+        "img":  "./assets/images/son8.jpg",
+        "description":  "Áo vest bé trai lịch lãm, phong cách.",
+        "colors":  [
+                       "#000000",
+                       "#2c3e50",
+                       "#696969",
+                       "#808080"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  49,
+        "name":  "Áo Len Bé Trai",
+        "category":  "Con Trai",
+        "price":  210000,
+        "img":  "./assets/images/son9.jpg",
+        "description":  "Áo len bé trai giữ ấm mùa đông.",
+        "colors":  [
+                       "#2c3e50",
+                       "#000000",
+                       "#808080",
+                       "#556b2f"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  50,
+        "name":  "Áo Khoác Jean Bé Trai",
+        "category":  "Con Trai",
+        "price":  260000,
+        "img":  "./assets/images/son10.jpg",
+        "description":  "Áo khoác jean bé trai năng động.",
+        "colors":  [
+                       "#1e90ff",
+                       "#000000",
+                       "#2f4f4f",
+                       "#708090"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  51,
+        "name":  "Áo Thun Bé Gái",
+        "category":  "Con Gái",
+        "price":  150000,
+        "img":  "./assets/images/daughter1.jpg",
+        "description":  "Áo thun bé gái dễ thương, thoải mái hằng ngày.",
+        "colors":  [
+                       "#ffffff",
+                       "#ff69b4",
+                       "#000000",
+                       "#87ceeb"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  52,
+        "name":  "Váy Hoa Bé Gái",
+        "category":  "Con Gái",
+        "price":  220000,
+        "img":  "./assets/images/daughter2.jpg",
+        "description":  "Váy hoa bé gái xinh xắn, phù hợp đi chơi.",
+        "colors":  [
+                       "#ff69b4",
+                       "#ffffff",
+                       "#ffd700",
+                       "#000000"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  53,
+        "name":  "Áo Polo Bé Gái",
+        "category":  "Con Gái",
+        "price":  180000,
+        "img":  "./assets/images/daughter3.jpg",
+        "description":  "Áo polo bé gái trẻ trung, năng động.",
+        "colors":  [
+                       "#000080",
+                       "#ffffff",
+                       "#ff69b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  54,
+        "name":  "Quần Jean Bé Gái",
+        "category":  "Con Gái",
+        "price":  230000,
+        "img":  "./assets/images/daughter4.jpg",
+        "description":  "Quần jean bé gái năng động, dễ phối áo.",
+        "colors":  [
+                       "#000000",
+                       "#1e90ff",
+                       "#2f4f4f",
+                       "#808080"
+                   ],
+        "isSale":  true
+    },
+    {
+        "id":  55,
+        "name":  "Áo Khoác Thể Thao Bé Gái",
+        "category":  "Con Gái",
+        "price":  250000,
+        "img":  "./assets/images/daughter5.jpg",
+        "description":  "Áo khoác thể thao bé gái khỏe khoắn, dễ thương.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#ff69b4",
+                       "#87ceeb"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  56,
+        "name":  "Áo Hoodie Bé Gái",
+        "category":  "Con Gái",
+        "price":  240000,
+        "img":  "./assets/images/daughter6.jpg",
+        "description":  "Áo hoodie bé gái ấm áp, thời trang.",
+        "colors":  [
+                       "#000000",
+                       "#ffffff",
+                       "#ff69b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  57,
+        "name":  "Áo Sơ Mi Bé Gái",
+        "category":  "Con Gái",
+        "price":  200000,
+        "img":  "./assets/images/daughter7.jpg",
+        "description":  "Áo sơ mi bé gái thanh lịch, gọn gàng.",
+        "colors":  [
+                       "#ffffff",
+                       "#000000",
+                       "#ff69b4",
+                       "#2c3e50"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  58,
+        "name":  "Quần Short Bé Gái",
+        "category":  "Con Gái",
+        "price":  170000,
+        "img":  "./assets/images/daughter8.jpg",
+        "description":  "Quần short bé gái thoải mái, dễ vận động.",
+        "colors":  [
+                       "#2f4f4f",
+                       "#deb887",
+                       "#808080",
+                       "#000000"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  59,
+        "name":  "Áo Len Bé Gái",
+        "category":  "Con Gái",
+        "price":  210000,
+        "img":  "./assets/images/daughter9.jpg",
+        "description":  "Áo len bé gái giữ ấm mùa đông.",
+        "colors":  [
+                       "#2c3e50",
+                       "#000000",
+                       "#808080",
+                       "#556b2f"
+                   ],
+        "isSale":  false
+    },
+    {
+        "id":  60,
+        "name":  "Áo Khoác Jean Bé Gái",
+        "category":  "Con Gái",
+        "price":  260000,
+        "img":  "./assets/images/daughter10.jpg",
+        "description":  "Áo khoác jean bé gái cá tính.",
+        "colors":  [
+                       "#1e90ff",
+                       "#000000",
+                       "#2f4f4f",
+                       "#708090"
+                   ],
+        "isSale":  false
+    }
 ]
