@@ -134,8 +134,8 @@ function addCartClickEvents(container) {
             const name = btn.getAttribute("data-name");
             const price = Number(btn.getAttribute("data-price") || 0);
             const image = btn.getAttribute("data-image");
-            addItemToCart({id: id, name: name, price: price, image: image, qty: 1});
-            window.location.href = "./cart.html";
+            addItemToCart({id: id, name: name, price: price, image: image, qty: 1}); // thêm xong
+            window.location.href = "./cart.html"; // direction qua cart.html
         })
     })
 
