@@ -1,6 +1,6 @@
 :root {
     --primary-red: #e74c3c;
-    --coral-pink: #ff7c7c;
+    --coral-pink: #ff7c7c; /* #ff8fa3 */
     --text-dark: #2d3436;
     --text-light: #636e72;
     --light-gray: #f8f9fa;
@@ -20,6 +20,12 @@ body {
 }
 
 /* --------------  Navigation -------------- */
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--coral-pink);
+}
+
 .navbar {
     border-bottom: 1px solid #dee2e6;
 }
@@ -114,37 +120,6 @@ body {
     background: #157347;
     transform: translateY(-50%) scale(1.05);
 }
-
-/* -------------- Mobile Menu Styles -------------- */
-/* .navbar-toggler {
-    color: #495057;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-}
-
-.mobile-menu .nav-link {
-    color: #495057 !important;
-    font-weight: 500;
-}
-
-.mobile-menu .nav-link:hover {
-    background-color: rgba(25, 135, 84, 0.1);
-    color: var(--ui-color) !important;
-}
-
-.mobile-menu .collapse a {
-    font-size: 14px;
-    transition: all 0.2s ease;
-}
-
-.mobile-menu .collapse a:hover {
-    color: var(--ui-color) !important;
-    padding-left: 2rem !important;
-} */
 
 /* -------------- Cart Badge -------------- */
 .cart-count {
@@ -462,16 +437,6 @@ body {
     background: transparent;
 }
 
-/* .social-buttons a {
-    background-color: red;
-    border-radius: 30px;
-    padding: 0.5rem;
-    width: 35px;
-    height: 35px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-} */
 .social-buttons a:not(:last-child) {
     margin-bottom: 0.8rem;
 }
