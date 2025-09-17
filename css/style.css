@@ -391,7 +391,7 @@ body {
 
 /* -------------- Promo Section -------------- */
 .promo-section {
-    background: var(--light-gray);
+    background: white;
 }
 
 .section-title {
@@ -424,6 +424,110 @@ body {
 .promo-section .btn-view-more:hover {
     background: var(--coral-pink);
     color: white;
+}
+
+/* -------------- Footer --------------  */
+.footer {
+    background-color: var(--light-gray);
+    color: var(--text-dark);
+    margin-top: auto;
+}
+
+.footer-main {
+    padding: 40px 0 30px;
+}
+
+.footer-title {
+    color: var(--text-dark);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.newsletter-form {
+    margin-bottom: 20px;
+}
+
+.newsletter-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #666;
+    border-radius: 0;
+    color: var(--text-dark);
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.newsletter-input:focus {
+    background-color: transparent;
+    border-color: var(--text-dark);
+    box-shadow: none;
+    color: var(--text-dark);
+}
+
+.newsletter-input::placeholder {
+    color: #999;
+}
+
+.newsletter-btn {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #666;
+    border-radius: 0;
+    color: var(--text-dark);
+    padding: 10px 15px;
+}
+
+.app-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.app-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.app-store-img,
+.google-play-img {
+    height: 40px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.app-store-btn:hover .app-store-img,
+.google-play-btn:hover .google-play-img {
+    opacity: 0.8;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--coral-pink);
+    text-decoration: none;
 }
 
 /* -------------- Social buttons --------------  */
