@@ -1,6 +1,7 @@
 :root {
     --primary-red: #e74c3c;
-    --coral-pink: #ff7c7c; /* #ff8fa3 */
+    --coral-pink: #ff7c7c;
+    /* #ff8fa3 */
     --text-dark: #2d3436;
     --text-light: #636e72;
     --light-gray: #f8f9fa;
@@ -21,9 +22,9 @@ body {
 
 /* --------------  Navigation -------------- */
 .logo-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--coral-pink);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--coral-pink);
 }
 
 .navbar {
