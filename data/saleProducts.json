@@ -1,28 +1,28 @@
 [
   {
     "title": "Đồ Đôi Nam Nữ - Phối Tông Cực Đẹp",
-    "image": "./assets/images/dodoi.jpg",
+    "image": "./assets/images/do_doi_1.jpg",
     "currentPrice": "249.000₫",
     "originalPrice": "289.000₫",
     "colors": ["#45b7d1", "#96ceb4", "#4ecdc4", "#ff6b6b"]
   },
   {
     "title": "Set Đồ Bé Gái Siêu Xinh - Mềm Mại & Dễ Thương",
-    "image": "./assets/images/begai.jpg",
+    "image": "./assets/images/be_gai_1.jpg",
     "currentPrice": "109.000₫",
     "originalPrice": "129.000₫",
     "colors": ["#4ecdc4", "#ff6b6b", "#96ceb4", "#45b7d1"]
   },
   {
     "title": "Set Mẹ Và Bé Gái - Tông Xuyệt Tông Cực Yêu",
-    "image": "./assets/images/mebe.jpg",
+    "image": "./assets/images/me_be_1.jpg",
     "currentPrice": "198.000₫",
     "originalPrice": "235.000₫",
     "colors": ["#96ceb4", "#4ecdc4", "#ff6b6b", "#45b7d1"]
   },
   {
     "title": "Set Đồ Gia Đình Mặc Nhà - Gắn Kết Thêm Yêu Thương",
-    "image": "./assets/images/giadinh.jpg",
+    "image": "./assets/images/gia_dinh_1.jpg",
     "currentPrice": "279.000₫",
     "originalPrice": "319.000₫",
     "colors": ["#ff6b6b", "#45b7d1", "#96ceb4", "#4ecdc4"]

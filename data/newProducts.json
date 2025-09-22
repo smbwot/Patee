@@ -1,25 +1,25 @@
 [
   {
     "title": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
-    "image": "./assets/images/giadinh.jpg",
+    "image": "./assets/images/gia_dinh_2.jpg",
     "currentPrice": "209.000₫",
     "colors": ["#45b7d1", "#ff6b6b", "#f9c74f", "#90be6d"]
   },
   {
     "title": "Set Bé Trai Đơn Giản - Thoải Mái Vận Động",
-    "image": "./assets/images/betrai1.jpg",
+    "image": "./assets/images/be_trai_1.jpg",
     "currentPrice": "108.000₫",
     "colors": ["#2e2e2e", "#f94144", "#4ecdc4", "#577590"]
   },
   {
     "title": "Set Mẹ Và Bé - Trang Phục Đồng Điệu Cho Những Khoảnh Khắc Yêu Thương",
-    "image": "./assets/images/mebe.jpg",
+    "image": "./assets/images/me_be_2.jpg",
     "currentPrice": "129.000₫",
     "colors": ["#f3f1ea", "#96ceb4", "#ff6b6b", "#f3722c"]
   },
   {
     "title": "Set Đồ Bé Trai Năng Động Tay Ngắn Quần Dài",
-    "image": "./assets/images/betrai2.jpg",
+    "image": "./assets/images/be_trai_2.jpg",
     "currentPrice": "115.000₫",
     "colors": ["#808080", "#f7fff7", "#f9c74f", "#577590"]
   }
