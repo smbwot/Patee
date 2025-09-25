@@ -4,7 +4,18 @@
     "name": "Áo gia đình mùa hè",
     "category": "Gia đình",
     "price": 350000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": true,
     "image": "./assets/images/gia_dinh_1.jpg"
   },
@@ -13,7 +24,18 @@
     "name": "Áo khoác gia đình thu đông",
     "category": "Gia đình",
     "price": 480000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#f3f1ea",
+      "#96ceb4",
+      "#ff6b6b",
+      "#f3722c"
+    ],
     "isSale": true,
     "image": "./assets/images/gia_dinh_2.jpg"
   },
@@ -22,7 +44,18 @@
     "name": "Áo thun gia đình du lịch",
     "category": "Gia đình",
     "price": 320000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#808080",
+      "#f7fff7",
+      "#f9c74f",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/gia_dinh_3.jpg"
   },
@@ -31,7 +64,18 @@
     "name": "Áo dài cách tân gia đình",
     "category": "Gia đình",
     "price": 600000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/gia_dinh_4.jpg"
   },
@@ -40,17 +84,38 @@
     "name": "Áo len gia đình Noel",
     "category": "Gia đình",
     "price": 550000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/gia_dinh_5.jpg"
   },
-
   {
     "id": 6,
     "name": "Đầm bầu mùa hè",
     "category": "Mẹ và bé",
     "price": 300000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": true,
     "image": "./assets/images/me_be_1.jpg"
   },
@@ -59,7 +124,18 @@
     "name": "Áo choàng cho mẹ và bé",
     "category": "Mẹ và bé",
     "price": 420000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#808080",
+      "#f7fff7",
+      "#f9c74f",
+      "#577590"
+    ],
     "isSale": true,
     "image": "./assets/images/me_be_2.jpg"
   },
@@ -68,7 +144,18 @@
     "name": "Bộ đồ ngủ mẹ và bé",
     "category": "Mẹ và bé",
     "price": 350000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#f3f1ea",
+      "#96ceb4",
+      "#ff6b6b",
+      "#f3722c"
+    ],
     "isSale": false,
     "image": "./assets/images/me_be_3.jpg"
   },
@@ -77,7 +164,18 @@
     "name": "Áo thun đôi mẹ và con",
     "category": "Mẹ và bé",
     "price": 280000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/me_be_4.jpg"
   },
@@ -86,17 +184,38 @@
     "name": "Bộ váy mẹ và bé công chúa",
     "category": "Mẹ và bé",
     "price": 500000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#45b7d1",
+      "#ff6b6b",
+      "#f9c74f",
+      "#90be6d"
+    ],
     "isSale": false,
     "image": "./assets/images/me_be_5.jpg"
   },
-
   {
     "id": 11,
     "name": "Áo sơ mi bé trai",
     "category": "Bé trai",
     "price": 220000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#f3f1ea",
+      "#96ceb4",
+      "#ff6b6b",
+      "#f3722c"
+    ],
     "isSale": true,
     "image": "./assets/images/be_trai_1.jpg"
   },
@@ -105,7 +224,18 @@
     "name": "Áo thun siêu nhân bé trai",
     "category": "Bé trai",
     "price": 180000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": true,
     "image": "./assets/images/be_trai_2.jpg"
   },
@@ -114,7 +244,18 @@
     "name": "Bộ thể thao bé trai",
     "category": "Bé trai",
     "price": 250000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#f3f1ea",
+      "#96ceb4",
+      "#ff6b6b",
+      "#f3722c"
+    ],
     "isSale": false,
     "image": "./assets/images/be_trai_3.jpg"
   },
@@ -123,7 +264,18 @@
     "name": "Áo khoác gió bé trai",
     "category": "Bé trai",
     "price": 300000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#808080",
+      "#f7fff7",
+      "#f9c74f",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/be_trai_4.jpg"
   },
@@ -132,17 +284,38 @@
     "name": "Áo polo bé trai",
     "category": "Bé trai",
     "price": 200000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#45b7d1",
+      "#ff6b6b",
+      "#f9c74f",
+      "#90be6d"
+    ],
     "isSale": false,
     "image": "./assets/images/be_trai_5.jpg"
   },
-
   {
     "id": 16,
     "name": "Đầm công chúa bé gái",
     "category": "Bé gái",
     "price": 280000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": true,
     "image": "./assets/images/be_gai_1.jpg"
   },
@@ -151,7 +324,18 @@
     "name": "Áo khoác hồng bé gái",
     "category": "Bé gái",
     "price": 320000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#f3f1ea",
+      "#96ceb4",
+      "#ff6b6b",
+      "#f3722c"
+    ],
     "isSale": true,
     "image": "./assets/images/be_gai_2.jpg"
   },
@@ -160,7 +344,18 @@
     "name": "Bộ váy hè bé gái",
     "category": "Bé gái",
     "price": 260000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#808080",
+      "#f7fff7",
+      "#f9c74f",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/be_gai_3.jpg"
   },
@@ -169,7 +364,18 @@
     "name": "Áo thun mèo dễ thương",
     "category": "Bé gái",
     "price": 190000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/be_gai_4.jpg"
   },
@@ -178,17 +384,38 @@
     "name": "Đầm dạ hội bé gái",
     "category": "Bé gái",
     "price": 450000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#45b7d1",
+      "#ff6b6b",
+      "#f9c74f",
+      "#90be6d"
+    ],
     "isSale": false,
     "image": "./assets/images/be_gai_5.jpg"
   },
-
   {
     "id": 21,
     "name": "Áo đôi tình nhân",
     "category": "Đồ đôi",
     "price": 400000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#808080",
+      "#f7fff7",
+      "#f9c74f",
+      "#577590"
+    ],
     "isSale": true,
     "image": "./assets/images/do_doi_1.jpg"
   },
@@ -197,7 +424,18 @@
     "name": "Áo khoác đôi mùa đông",
     "category": "Đồ đôi",
     "price": 520000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#f3f1ea",
+      "#96ceb4",
+      "#ff6b6b",
+      "#f3722c"
+    ],
     "isSale": true,
     "image": "./assets/images/do_doi_2.jpg"
   },
@@ -206,7 +444,18 @@
     "name": "Áo thun đôi dễ thương",
     "category": "Đồ đôi",
     "price": 300000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#45b7d1",
+      "#ff6b6b",
+      "#f9c74f",
+      "#90be6d"
+    ],
     "isSale": false,
     "image": "./assets/images/do_doi_3.jpg"
   },
@@ -215,7 +464,18 @@
     "name": "Áo sơ mi đôi công sở",
     "category": "Đồ đôi",
     "price": 450000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#808080",
+      "#f7fff7",
+      "#f9c74f",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/do_doi_4.jpg"
   },
@@ -224,7 +484,18 @@
     "name": "Áo hoodie đôi cá tính",
     "category": "Đồ đôi",
     "price": 480000,
-    "sizes": ["S", "M", "L", "XL"],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colors": [
+      "#2e2e2e",
+      "#f94144",
+      "#4ecdc4",
+      "#577590"
+    ],
     "isSale": false,
     "image": "./assets/images/do_doi_5.jpg"
   }
