@@ -2,57 +2,55 @@ console.log("Script loaded ✅");
 
 // Import Products JSON
 function loadProducts() {
-    // SALE products
-    fetch("./data/saleProducts.json")
+    fetch("./data/products.json")
         .then(function (response) {
             return response.json();
         })
-        .then(function (saleProducts) {
-            renderProducts(saleProducts, "#sale-items .products-json", "SALE", "bg-danger");
-        });
+        .then(function (products) {
+            // Filter products for sale section (limit to 4)
+            const saleProducts = products.filter(product => product.isSale).slice(0, 4);
+            renderProducts(saleProducts, "#sale-items .products-json", "SALE");
 
-    // NEW products
-    fetch("./data/newProducts.json")
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (newProducts) {
-            renderProducts(newProducts, "#new-items .products-json", "HÀNG ĐÃ VỀ", "bg-success");
+            // Filter products for new section (first 4 products)
+            const newProducts = products.slice(0, 4);
+            renderProducts(newProducts, "#new-items .products-json", "HÀNG ĐÃ VỀ");
         });
 }
 
-function renderProducts(products, containerSelector, badgeText, badgeClass) {
+function renderProducts(products, containerSelector, badgeType) {
     const container = document.querySelector(containerSelector);
     if (!container) return;
 
     container.innerHTML = "";
 
     products.forEach(function (product) {
-        const card = createProductCard(product, badgeText, badgeClass);
+        const card = createProductCard(product, badgeType);
         container.insertAdjacentHTML("beforeend", card);
     });
-
-    addColorClickEvents(container);
 }
 
-function createProductCard(product, badgeText, badgeClass) {
-    // color swatches
-    let colors = "";
-    let productColors = product.colors ? product.colors : [];
+function createProductCard(product, badgeType) {
+    // Determine badge text and class based on badgeType parameter
+    let badgeText = "";
+    let badgeClass = "";
 
-    productColors.forEach(function (color, index) {
-        let activeClass = index === 0 ? "active" : "";
-        colors += `<span class="color-swatch ${activeClass}" style="background-color:${color};"></span>`;
-    });
+    if (badgeType === "SALE") {
+        badgeText = "SALE";
+        badgeClass = "bg-danger";
+    } else if (badgeType === "HÀNG ĐÃ VỀ") {
+        badgeText = "HÀNG ĐÃ VỀ";
+        badgeClass = "bg-success";
+    }
 
     let card = `
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
             <div class="product-card">
+                ${badgeText ? `
                 <div class="product-badge">
                     <span class="badge ${badgeClass}">${badgeText}</span>
-                </div>
+                </div>` : ""}
                 <div class="product-image-container">
-                    <img src="${product.image}" alt="${product.title}" class="product-image">
+                    <img src="${product.image}" alt="${product.name}" class="product-image">
                     <div class="product-overlay">
                         <div class="overlay-content">
                             <a href="#" class="btn btn-outline-light btn-sm mb-2"><i class="bi bi-eye"></i> Xem nhanh</a>
@@ -61,36 +59,17 @@ function createProductCard(product, badgeText, badgeClass) {
                     </div>
                 </div>
                 <div class="product-info">
-                    <h6 class="product-title">${product.title}</h6>
+                    <h6 class="product-title">${product.name}</h6>
                     <div class="product-price">
-                        ${product.originalPrice ? `<span class="price old-price">${product.originalPrice}</span>` : ""}
-                        <span class="price sale-price">${product.currentPrice ? product.currentPrice : ""}</span>
+                        ${badgeType === "SALE" && product.isSale ? `<span class="price old-price">${(product.price * 1.2).toLocaleString('vi-VN')}₫</span>` : ""}
+                        <span class="price sale-price">${product.currentPrice ? product.currentPrice : product.price.toLocaleString('vi-VN')}₫</span>
                     </div>
-                    <div class="color-options">${colors}</div>
                 </div>
             </div>
         </div>
     `;
 
     return card;
-}
-
-// click events for changing color swatches
-function addColorClickEvents(container) {
-    const swatches = container.querySelectorAll(".color-swatch");
-
-    swatches.forEach(function (swatch) {
-        swatch.addEventListener("click", function () {
-            const parent = swatch.parentNode;
-            const allSwatches = parent.querySelectorAll(".color-swatch");
-
-            allSwatches.forEach(function (s) {
-                s.classList.remove("active");
-            });
-
-            swatch.classList.add("active");
-        });
-    });
 }
 
 

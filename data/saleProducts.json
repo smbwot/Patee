@@ -4,12 +4,11 @@
     "image": "./assets/images/do_doi_1.jpg",
     "currentPrice": "249.000₫",
     "originalPrice": "289.000₫",
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": [
-      "#45b7d1",
-      "#96ceb4",
-      "#4ecdc4",
-      "#ff6b6b"
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
     ]
   },
   {
@@ -17,12 +16,11 @@
     "image": "./assets/images/be_gai_1.jpg",
     "currentPrice": "109.000₫",
     "originalPrice": "129.000₫",
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": [
-      "#4ecdc4",
-      "#ff6b6b",
-      "#96ceb4",
-      "#45b7d1"
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
     ]
   },
   {
@@ -30,12 +28,11 @@
     "image": "./assets/images/me_be_1.jpg",
     "currentPrice": "198.000₫",
     "originalPrice": "235.000₫",
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": [
-      "#96ceb4",
-      "#4ecdc4",
-      "#ff6b6b",
-      "#45b7d1"
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
     ]
   },
   {
@@ -43,12 +40,11 @@
     "image": "./assets/images/gia_dinh_1.jpg",
     "currentPrice": "279.000₫",
     "originalPrice": "319.000₫",
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": [
-      "#ff6b6b",
-      "#45b7d1",
-      "#96ceb4",
-      "#4ecdc4"
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
     ]
   }
 ]

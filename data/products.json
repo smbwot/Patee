@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": 1,
     "name": "Áo gia đình mùa hè",
@@ -9,12 +9,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
     ],
     "isSale": true,
     "image": "./assets/images/gia_dinh_1.jpg"
@@ -30,12 +24,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#f3f1ea",
-      "#96ceb4",
-      "#ff6b6b",
-      "#f3722c"
-    ],
     "isSale": true,
     "image": "./assets/images/gia_dinh_2.jpg"
   },
@@ -49,12 +37,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#808080",
-      "#f7fff7",
-      "#f9c74f",
-      "#577590"
     ],
     "isSale": false,
     "image": "./assets/images/gia_dinh_3.jpg"
@@ -70,12 +52,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
-    ],
     "isSale": false,
     "image": "./assets/images/gia_dinh_4.jpg"
   },
@@ -89,12 +65,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
     ],
     "isSale": false,
     "image": "./assets/images/gia_dinh_5.jpg"
@@ -110,12 +80,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
-    ],
     "isSale": true,
     "image": "./assets/images/me_be_1.jpg"
   },
@@ -129,12 +93,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#808080",
-      "#f7fff7",
-      "#f9c74f",
-      "#577590"
     ],
     "isSale": true,
     "image": "./assets/images/me_be_2.jpg"
@@ -150,12 +108,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#f3f1ea",
-      "#96ceb4",
-      "#ff6b6b",
-      "#f3722c"
-    ],
     "isSale": false,
     "image": "./assets/images/me_be_3.jpg"
   },
@@ -169,12 +121,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
     ],
     "isSale": false,
     "image": "./assets/images/me_be_4.jpg"
@@ -190,12 +136,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#45b7d1",
-      "#ff6b6b",
-      "#f9c74f",
-      "#90be6d"
-    ],
     "isSale": false,
     "image": "./assets/images/me_be_5.jpg"
   },
@@ -209,12 +149,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#f3f1ea",
-      "#96ceb4",
-      "#ff6b6b",
-      "#f3722c"
     ],
     "isSale": true,
     "image": "./assets/images/be_trai_1.jpg"
@@ -230,12 +164,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
-    ],
     "isSale": true,
     "image": "./assets/images/be_trai_2.jpg"
   },
@@ -249,12 +177,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#f3f1ea",
-      "#96ceb4",
-      "#ff6b6b",
-      "#f3722c"
     ],
     "isSale": false,
     "image": "./assets/images/be_trai_3.jpg"
@@ -270,12 +192,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#808080",
-      "#f7fff7",
-      "#f9c74f",
-      "#577590"
-    ],
     "isSale": false,
     "image": "./assets/images/be_trai_4.jpg"
   },
@@ -289,12 +205,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#45b7d1",
-      "#ff6b6b",
-      "#f9c74f",
-      "#90be6d"
     ],
     "isSale": false,
     "image": "./assets/images/be_trai_5.jpg"
@@ -310,12 +220,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
-    ],
     "isSale": true,
     "image": "./assets/images/be_gai_1.jpg"
   },
@@ -329,12 +233,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#f3f1ea",
-      "#96ceb4",
-      "#ff6b6b",
-      "#f3722c"
     ],
     "isSale": true,
     "image": "./assets/images/be_gai_2.jpg"
@@ -350,12 +248,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#808080",
-      "#f7fff7",
-      "#f9c74f",
-      "#577590"
-    ],
     "isSale": false,
     "image": "./assets/images/be_gai_3.jpg"
   },
@@ -369,12 +261,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
     ],
     "isSale": false,
     "image": "./assets/images/be_gai_4.jpg"
@@ -390,12 +276,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#45b7d1",
-      "#ff6b6b",
-      "#f9c74f",
-      "#90be6d"
-    ],
     "isSale": false,
     "image": "./assets/images/be_gai_5.jpg"
   },
@@ -409,12 +289,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#808080",
-      "#f7fff7",
-      "#f9c74f",
-      "#577590"
     ],
     "isSale": true,
     "image": "./assets/images/do_doi_1.jpg"
@@ -430,12 +304,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#f3f1ea",
-      "#96ceb4",
-      "#ff6b6b",
-      "#f3722c"
-    ],
     "isSale": true,
     "image": "./assets/images/do_doi_2.jpg"
   },
@@ -449,12 +317,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#45b7d1",
-      "#ff6b6b",
-      "#f9c74f",
-      "#90be6d"
     ],
     "isSale": false,
     "image": "./assets/images/do_doi_3.jpg"
@@ -470,12 +332,6 @@
       "L",
       "XL"
     ],
-    "colors": [
-      "#808080",
-      "#f7fff7",
-      "#f9c74f",
-      "#577590"
-    ],
     "isSale": false,
     "image": "./assets/images/do_doi_4.jpg"
   },
@@ -489,12 +345,6 @@
       "M",
       "L",
       "XL"
-    ],
-    "colors": [
-      "#2e2e2e",
-      "#f94144",
-      "#4ecdc4",
-      "#577590"
     ],
     "isSale": false,
     "image": "./assets/images/do_doi_5.jpg"
