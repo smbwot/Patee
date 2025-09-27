@@ -7,12 +7,12 @@ function loadProducts() {
             return response.json();
         })
         .then(function (products) {
-            // Filter products for sale section (limit to 4)
+            // isSale: true
             const saleProducts = products.filter(product => product.isSale).slice(0, 4);
             renderProducts(saleProducts, "#sale-items .products-json", "SALE");
 
-            // Filter products for new section (first 4 products)
-            const newProducts = products.slice(0, 4);
+            // WITHOUT isSale: true
+            const newProducts = products.filter(product => !product.isSale).slice(0, 4);
             renderProducts(newProducts, "#new-items .products-json", "HÀNG ĐÃ VỀ");
         });
 }
@@ -27,10 +27,11 @@ function renderProducts(products, containerSelector, badgeType) {
         const card = createProductCard(product, badgeType);
         container.insertAdjacentHTML("beforeend", card);
     });
+
+    addCartClickEvents(container);
 }
 
 function createProductCard(product, badgeType) {
-    // Determine badge text and class based on badgeType parameter
     let badgeText = "";
     let badgeClass = "";
 
@@ -50,19 +51,20 @@ function createProductCard(product, badgeType) {
                     <span class="badge ${badgeClass}">${badgeText}</span>
                 </div>` : ""}
                 <div class="product-image-container">
-                    <img src="${product.image}" alt="${product.name}" class="product-image">
-                    <div class="product-overlay">
-                        <div class="overlay-content">
-                            <a href="#" class="btn btn-outline-light btn-sm mb-2"><i class="bi bi-eye"></i> Xem nhanh</a>
-                            <a href="#" class="btn btn-light btn-sm"><i class="bi bi-cart"></i> Mua ngay</a>
+                    <a href="ChiTietSanPham.html?id=${product.id}" class="product-image-link">
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <div class="product-quick-view">
+                            <span class="btn-view-details">
+                                <i class="bi bi-eye"></i> Xem chi tiết
+                            </span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="product-info">
                     <h6 class="product-title">${product.name}</h6>
                     <div class="product-price">
-                        ${badgeType === "SALE" && product.isSale ? `<span class="price old-price">${(product.price * 1.2).toLocaleString('vi-VN')} VNĐ</span>` : ""}
-                        <span class="price sale-price">${product.currentPrice ? product.currentPrice : product.price.toLocaleString('vi-VN')} VNĐ</span>
+                        ${badgeType === "SALE" && product.isSale ? `<span class="price old-price">${(product.price * 1.2).toLocaleString('vi-VN')}₫</span>` : ""}
+                        <span class="price sale-price">${product.currentPrice ? product.currentPrice : product.price.toLocaleString('vi-VN')}₫</span>
                     </div>
                 </div>
             </div>
@@ -72,6 +74,63 @@ function createProductCard(product, badgeType) {
     return card;
 }
 
+// Cart
+function getCartItems() {
+    try {
+        return JSON.parse(localStorage.getItem('cart_items') || '[]');
+    } catch {
+        return [];
+    }
+}
+
+function setCartItems(items) {
+    localStorage.setItem('cart_items', JSON.stringify(items));
+    updateCartCount();
+}
+
+function updateCartCount() {
+    const cartItems = getCartItems();
+    const cartCountElements = document.querySelectorAll('.cart-count');
+    const totalItems = cartItems.reduce((sum, item) => sum + item.qty, 0);
+
+    cartCountElements.forEach(element => {
+        element.textContent = totalItems;
+    });
+}
+
+function addCartClickEvents(container) {
+    const buttons = container.querySelectorAll(".btn-add-to-cart")
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+            e.preventDefault();
+            const id = btn.getAttribute("data-id");
+            const name = btn.getAttribute("data-name");
+            const price = Number(btn.getAttribute("data-price"));
+            const image = btn.getAttribute("data-image");
+
+            // Add to cart using the function from load-components.js
+            if (typeof addItemToCart === 'function') {
+                addItemToCart({ id: id, name: name, price: price, image: image, qty: 1 });
+            } else {
+                // Fallback
+                const currItems = getCartItems();
+                const foundIndex = currItems.findIndex(item => Number(item.id) === Number(id));
+                if (foundIndex !== -1) {
+                    currItems[foundIndex].qty = currItems[foundIndex].qty + 1;
+                } else {
+                    currItems.push({ id: id, name: name, price: price, image: image, qty: 1 });
+                }
+                setCartItems(currItems);
+            }
+
+            // Open cart panel
+            const cartToggle = document.querySelector('.cart-toggle');
+            if (cartToggle) {
+                cartToggle.click();
+            }
+        })
+    })
+}
 
 // Counter
 class CountdownTimer {
@@ -117,6 +176,7 @@ class CountdownTimer {
 document.addEventListener("DOMContentLoaded", () => {
     loadProducts();
     new CountdownTimer();
+    updateCartCount();
 
     // Back to top button
     let backToTop = document.querySelector(".back-to-top");
