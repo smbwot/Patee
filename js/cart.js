@@ -181,6 +181,29 @@ function initCart() {
   cartInit = true;
 }
 
+// Cart event handling
+function addCartClickEvents(container) {
+  const buttons = container.querySelectorAll(".btn-add-to-cart")
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = btn.getAttribute("data-id");
+      const name = btn.getAttribute("data-name");
+      const price = Number(btn.getAttribute("data-price"));
+      const image = btn.getAttribute("data-image");
+
+      // Add to cart using the addItemToCart function
+      addItemToCart({ id: id, name: name, price: price, image: image, qty: 1 });
+
+      // Open cart panel
+      const cartToggle = document.querySelector('.cart-toggle');
+      if (cartToggle) {
+        cartToggle.click();
+      }
+    })
+  })
+}
+
 // Load cart
 async function loadCartPanel() {
   let response = await fetch("./partials/cart.html");
@@ -200,7 +223,8 @@ window.cartFunctions = {
   updateCartCount,
   formatPrice,
   initCart,
-  loadCartPanel
+  loadCartPanel,
+  addCartClickEvents
 };
 
 // DOM 

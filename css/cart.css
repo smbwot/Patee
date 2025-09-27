@@ -291,10 +291,23 @@
 .cart-footer .btn {
     width: 100%;
     margin-bottom: 10px;
+    min-height: 44px; /* Ensure consistent height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cart-footer .btn:last-child {
     margin-bottom: 0;
+}
+
+/* Ensure consistent button height across different button types */
+.cart-footer .btn-outline-secondary,
+.cart-footer .btn-success {
+    height: 44px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .cart-total {

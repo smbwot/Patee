@@ -10,19 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/cart.css">
     <style>
-        /* Product detail specific styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-            padding: 20px;
-        }
         .product-container {
-            max-width: 1200px;
             margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
         .product-content {
@@ -256,7 +245,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container container-detail">
         <div class="back-link" onclick="history.back()">
             ← Quay lại sản phẩm
         </div>
@@ -266,7 +255,7 @@
             <p>Đang tải thông tin sản phẩm...</p>
         </div>
 
-        <div id="productContainer" class="product-container" style="display: none;">
+        <div id="productContainer" class="product-container mb-5" style="display: none;">
             <div class="product-content">
             <div class="product-image-section">
                 <img id="productImage" src="" alt="">
@@ -280,7 +269,7 @@
                 <div class="product-options">
                     <h4>Chọn size:</h4>
                     <div id="sizeOptions" class="size-options">
-                        <!-- Sizes will be populated dynamically -->
+                        <!-- Sizes -->
                     </div>
                 </div>
 
@@ -450,7 +439,7 @@
                 weightInput.addEventListener('input', calculateRecommendedSize);
             }
 
-            // Buy now functionality
+            // Buy now
             if (buyNowBtn) {
                 buyNowBtn.addEventListener('click', function() {
                     addToCartFromDetail();
@@ -458,7 +447,7 @@
                 });
             }
 
-            // Add to cart functionality
+            // Add to cart
             if (addToCartBtn) {
                 addToCartBtn.addEventListener('click', function() {
                     addToCartFromDetail();
@@ -486,7 +475,7 @@
             if (window.cartFunctions && window.cartFunctions.addItemToCart) {
                 window.cartFunctions.addItemToCart(cartItem);
             } else {
-                // Fallback to basic cart functionality
+                // Fallback
                 let cart = JSON.parse(localStorage.getItem('cart_items') || '[]');
                 const existingItem = cart.find(item =>
                     item.id === cartItem.id && item.size === selectedSize
@@ -519,7 +508,7 @@
             notification.className = 'notification';
             notification.style.cssText = `
                 position: fixed;
-                top: 20px;
+                top: 160px;
                 right: 20px;
                 background: linear-gradient(135deg, #4CAF50, #45a049);
                 color: white;

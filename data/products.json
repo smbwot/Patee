@@ -17,7 +17,7 @@
     "id": 2,
     "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
     "category": "Gia đình",
-    "price": 480000,
+    "price": 380000,
     "sizes": [
       "S",
       "M",
@@ -45,7 +45,7 @@
     "id": 4,
     "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
     "category": "Gia đình",
-    "price": 600000,
+    "price": 300000,
     "sizes": [
       "S",
       "M",
@@ -59,7 +59,7 @@
     "id": 5,
     "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
     "category": "Gia đình",
-    "price": 550000,
+    "price": 350000,
     "sizes": [
       "S",
       "M",
@@ -73,7 +73,7 @@
     "id": 6,
     "name": "Set Mẹ Và Bé Gái - Tông Xuyệt Tông Cực Yêu",
     "category": "Mẹ và bé",
-    "price": 300000,
+    "price": 200000,
     "sizes": [
       "S",
       "M",
@@ -87,7 +87,7 @@
     "id": 7,
     "name": "Set Mẹ Và Bé - Đồng Điệu Cho Những Khoảnh Khắc Yêu Thương",
     "category": "Mẹ và bé",
-    "price": 420000,
+    "price": 220000,
     "sizes": [
       "S",
       "M",
@@ -101,7 +101,7 @@
     "id": 8,
     "name": "Set Đồ Dạo Phố Cho Mẹ Và Bé - Phong Cách Thời Thượng",
     "category": "Mẹ và bé",
-    "price": 350000,
+    "price": 250000,
     "sizes": [
       "S",
       "M",
@@ -129,7 +129,7 @@
     "id": 10,
     "name": "Bộ Váy Mẹ Và Bé Công Chúa - Vẻ Đẹp Lộng Lẫy",
     "category": "Mẹ và bé",
-    "price": 500000,
+    "price": 200000,
     "sizes": [
       "S",
       "M",
@@ -185,7 +185,7 @@
     "id": 14,
     "name": "Áo Polo Bé Trai - Phong Cách Thể Thao",
     "category": "Bé trai",
-    "price": 300000,
+    "price": 200000,
     "sizes": [
       "S",
       "M",
@@ -227,7 +227,7 @@
     "id": 17,
     "name": "Áo Khoác Hồng Bé Gái - Dễ Thương Phong Cách",
     "category": "Bé gái",
-    "price": 320000,
+    "price": 220000,
     "sizes": [
       "S",
       "M",
@@ -269,7 +269,7 @@
     "id": 20,
     "name": "Đầm Dạ Hội Bé Gái - Lộng Lẫy Tiệc Tùng",
     "category": "Bé gái",
-    "price": 450000,
+    "price": 350000,
     "sizes": [
       "S",
       "M",
@@ -283,7 +283,7 @@
     "id": 21,
     "name": "Đồ Đôi Nam Nữ - Phối Tông Cực Đẹp",
     "category": "Đồ đôi",
-    "price": 400000,
+    "price": 300000,
     "sizes": [
       "S",
       "M",
@@ -297,7 +297,7 @@
     "id": 22,
     "name": "Áo Khoác Đôi Mùa Đông - Ấm Áp Ngọt Ngào",
     "category": "Đồ đôi",
-    "price": 520000,
+    "price": 320000,
     "sizes": [
       "S",
       "M",
@@ -323,9 +323,9 @@
   },
   {
     "id": 24,
-    "name": "Áo Sơ Mi Đôi Công Sở - Thanh Lịch Chuyên Nghiệp",
+    "name": "Áo Sơ Mi Đôi - Thanh Lịch Chuyên Nghiệp",
     "category": "Đồ đôi",
-    "price": 450000,
+    "price": 350000,
     "sizes": [
       "S",
       "M",
@@ -339,7 +339,7 @@
     "id": 25,
     "name": "Áo Hoodie Đôi Cá Tính - Phong Cách Trẻ Trung",
     "category": "Đồ đôi",
-    "price": 480000,
+    "price": 380000,
     "sizes": [
       "S",
       "M",

@@ -1,4 +1,3 @@
-console.log("Script loaded ✅");
 
 // Import Products JSON
 function loadProducts() {
@@ -28,7 +27,10 @@ function renderProducts(products, containerSelector, badgeType) {
         container.insertAdjacentHTML("beforeend", card);
     });
 
-    addCartClickEvents(container);
+    // Use cartFunctions API for cart event handling
+    if (window.cartFunctions && window.cartFunctions.addCartClickEvents) {
+        window.cartFunctions.addCartClickEvents(container);
+    }
 }
 
 function createProductCard(product, badgeType) {
@@ -74,63 +76,6 @@ function createProductCard(product, badgeType) {
     return card;
 }
 
-// Cart
-function getCartItems() {
-    try {
-        return JSON.parse(localStorage.getItem('cart_items') || '[]');
-    } catch {
-        return [];
-    }
-}
-
-function setCartItems(items) {
-    localStorage.setItem('cart_items', JSON.stringify(items));
-    updateCartCount();
-}
-
-function updateCartCount() {
-    const cartItems = getCartItems();
-    const cartCountElements = document.querySelectorAll('.cart-count');
-    const totalItems = cartItems.reduce((sum, item) => sum + item.qty, 0);
-
-    cartCountElements.forEach(element => {
-        element.textContent = totalItems;
-    });
-}
-
-function addCartClickEvents(container) {
-    const buttons = container.querySelectorAll(".btn-add-to-cart")
-    buttons.forEach(function (btn) {
-        btn.addEventListener("click", function (e) {
-            e.preventDefault();
-            const id = btn.getAttribute("data-id");
-            const name = btn.getAttribute("data-name");
-            const price = Number(btn.getAttribute("data-price"));
-            const image = btn.getAttribute("data-image");
-
-            // Add to cart using the function from load-components.js
-            if (typeof addItemToCart === 'function') {
-                addItemToCart({ id: id, name: name, price: price, image: image, qty: 1 });
-            } else {
-                // Fallback
-                const currItems = getCartItems();
-                const foundIndex = currItems.findIndex(item => Number(item.id) === Number(id));
-                if (foundIndex !== -1) {
-                    currItems[foundIndex].qty = currItems[foundIndex].qty + 1;
-                } else {
-                    currItems.push({ id: id, name: name, price: price, image: image, qty: 1 });
-                }
-                setCartItems(currItems);
-            }
-
-            // Open cart panel
-            const cartToggle = document.querySelector('.cart-toggle');
-            if (cartToggle) {
-                cartToggle.click();
-            }
-        })
-    })
-}
 
 // Counter
 class CountdownTimer {
