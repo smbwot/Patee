@@ -12,7 +12,7 @@ function loadProducts() {
             renderProducts(saleProducts, "#sale-items .products-json", "SALE");
 
             // WITHOUT isSale: true
-            const newProducts = products.filter(product => !product.isSale).slice(0, 4);
+            const newProducts = products.filter(product => !product.isSale).slice(0, 8);
             renderProducts(newProducts, "#new-items .products-json", "HÀNG ĐÃ VỀ");
         });
 }

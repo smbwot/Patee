@@ -16,11 +16,13 @@
 - **No Dependencies**: Self-contained with vendor libraries included
 
 ### Data Management
-- **JSON Files**: Consolidated product catalog in single `data/products.json`
+- **JSON Files**: Consolidated product catalog in single `data/products.json` with enhanced marketing-focused names
+- **Name Reference**: `data/name.json` used as reference for product naming patterns and marketing language
 - **LocalStorage**: Browser-based cart persistence with size tracking
 - **Fetch API**: Dynamic data loading from JSON files
 - **CORS Restrictions**: Requires web server for JSON access
 - **Client-side Filtering**: JavaScript logic for sale/new item separation
+- **Content Enhancement**: Product names optimized with emotional appeal and benefit-focused descriptions
 
 ## File Structure
 ```
@@ -44,7 +46,8 @@ Patee/
 │   ├── cart.js                   # Modular cart system (NEW)
 │   └── load-components.js        # Dynamic component loader
 ├── data/
-│   └── products.json             # Consolidated product catalog
+│   ├── products.json             # Consolidated product catalog with enhanced names
+│   └── name.json                 # Reference file for naming patterns
 ├── partials/
 │   ├── header.html               # Navigation header
 │   ├── footer.html               # Page footer

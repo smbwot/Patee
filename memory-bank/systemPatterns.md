@@ -18,11 +18,13 @@ Page Load → load-components.js → Fetch Partials → Inject DOM → Initializ
 JSON Products → fetch() → Filter Logic → renderProducts() → createProductCard() → DOM Injection
 ```
 - **Product Catalog**: Centralized in `data/products.json` with 25+ items (consolidated from multiple files)
+- **Enhanced Product Names**: Marketing-focused descriptions with emotional appeal and benefit-focused language
 - **Dynamic Filtering**: JavaScript separates sale items (`isSale: true`) from new items
 - **Featured Products**: Homepage sections populated through filtering logic
 - **Dynamic Rendering**: JavaScript creates product cards from data templates
 - **Simple Event Handling**: Direct onclick functions for beginner-friendly code
 - **Clean Data**: Removed fallback debugging code, relies on valid data structure
+- **Content Optimization**: Product names enhanced using patterns from `data/name.json` for consistency
 
 ### 3. LocalStorage Cart Pattern
 ```
@@ -104,7 +106,7 @@ products.json → JavaScript Filter Logic → Separate Containers → Render Pro
 ```javascript
 {
   id: number,
-  name: string,
+  name: string,           // Enhanced with marketing-focused descriptions
   category: "Gia đình"|"Mẹ và bé"|"Bé trai"|"Bé gái"|"Đồ đôi",
   price: number,
   sizes: ["S", "M", "L", "XL"],
@@ -112,6 +114,10 @@ products.json → JavaScript Filter Logic → Separate Containers → Render Pro
   image: string
 }
 ```
+**Name Enhancement Pattern:**
+- Simple names → Descriptive marketing language
+- Example: "Áo gia đình mùa hè" → "Set Đồ Gia Đình Mặc Nhà - Gắn Kết Thêm Yêu Thương"
+- Integration with `name.json` patterns for consistency
 
 ### Enhanced Cart Item Schema (with size support)
 ```javascript
@@ -159,3 +165,4 @@ function calculateRecommendedSize(height, weight) {
 8. **Poor Documentation**: Implemented comprehensive Memory Bank system
 9. **Duplicate Code**: Removed duplicate `Patee-hehe/` directory files
 10. **Legacy Dependencies**: Cleaned up obsolete files and unused assets
+11. **Poor Product Names**: Enhanced with marketing-focused descriptions and emotional appeal
