@@ -762,7 +762,7 @@ body {
     margin-top: 5px;
 }
 
-/* Coupon Section - Gia Bao's discount system */
+/* Coupon Section */
 .order-summary .coupon-section {
     display: flex;
     margin-bottom: 20px;
@@ -825,7 +825,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* Login Prompt - Gia Bao's user engagement */
+/* Login Prompt */
 .order-summary .login-prompt {
     font-size: 0.90rem;
     text-align: center;
@@ -952,15 +952,9 @@ body {
 /* =============================================================================
    Trang Sản Phẩm - Mỹ Linh
    =============================================================================
-   Author: MyLinh
-   Description: Category page layout with sidebar filters and product grid
-   Integration: Added to main style.css for GitHub Pages compatibility
 */
-
-/* Category Page Layout - MyLinh's Design */
 .category-page {
     background: #f9f9f9;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 .category-header {
@@ -968,6 +962,7 @@ body {
     color: black;
     padding: 10px;
     text-align: center;
+    margin-top: 80px;
 }
 
 .category-main-layout {
@@ -1039,23 +1034,4 @@ body {
 
 .category-buy-button:hover {
     background-color: #e53935;
-}
-
-/* Responsive adjustments for category pages - MyLinh's responsive design */
-@media (max-width: 768px) {
-    .category-main-layout {
-        flex-direction: column;
-    }
-
-    .category-filters {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        margin-bottom: 20px;
-    }
-
-    .category-product-grid {
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
 }
