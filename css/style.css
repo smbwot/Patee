@@ -351,7 +351,7 @@ body {
 .btn-view-more:hover {
     background: white;
     color: var(--coral-pink);
-    border-color: white;
+    border-color: white; 
 }
 
 /* -------------- Promo Section -------------- */
