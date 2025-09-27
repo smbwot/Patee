@@ -101,7 +101,6 @@
         }
         .size-box:hover {
             border-color: var(--ui-color);
-            transform: translateY(-2px);
         }
         .size-box.selected {
             border-color: var(--ui-color);
@@ -159,7 +158,6 @@
             cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: all 0.3s ease;
         }
         .buy-now-btn {
             background-color: var(--primary-red);
@@ -167,8 +165,6 @@
         }
         .buy-now-btn:hover {
             background-color: #c0392b;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
         }
         .add-to-cart-btn {
             background-color: #000;
@@ -176,8 +172,6 @@
         }
         .add-to-cart-btn:hover {
             background-color: #333;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         }
         .loading {
             text-align: center;
@@ -262,17 +256,18 @@
     </style>
 </head>
 <body>
-    <div class="back-link" onclick="history.back()">
-        ← Quay lại sản phẩm
-    </div>
+    <div class="container">
+        <div class="back-link" onclick="history.back()">
+            ← Quay lại sản phẩm
+        </div>
 
-    <div id="loading" class="loading">
-        <div class="loading-spinner"></div>
-        <p>Đang tải thông tin sản phẩm...</p>
-    </div>
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <p>Đang tải thông tin sản phẩm...</p>
+        </div>
 
-    <div id="productContainer" class="product-container" style="display: none;">
-        <div class="product-content">
+        <div id="productContainer" class="product-container" style="display: none;">
+            <div class="product-content">
             <div class="product-image-section">
                 <img id="productImage" src="" alt="">
             </div>
@@ -313,6 +308,7 @@
         <h3>❌ Không tìm thấy sản phẩm</h3>
         <p>Sản phẩm này không tồn tại hoặc đã bị xóa.</p>
         <button onclick="history.back()" class="back-link" style="margin-top: 20px;">Quay lại trang trước</button>
+    </div>
     </div>
 
     <!-- Scripts -->

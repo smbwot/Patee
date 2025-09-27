@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Áo gia đình mùa hè",
+    "name": "Set Đồ Gia Đình Mặc Nhà - Gắn Kết Thêm Yêu Thương",
     "category": "Gia đình",
     "price": 350000,
     "sizes": [
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "name": "Áo khoác gia đình thu đông",
+    "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
     "category": "Gia đình",
     "price": 480000,
     "sizes": [
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "name": "Áo thun gia đình du lịch",
+    "name": "Áo Thun Gia Đình Du Lịch - Phong Cách Tự Do",
     "category": "Gia đình",
     "price": 320000,
     "sizes": [
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "name": "Áo dài cách tân gia đình",
+    "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
     "category": "Gia đình",
     "price": 600000,
     "sizes": [
@@ -57,7 +57,7 @@
   },
   {
     "id": 5,
-    "name": "Áo len gia đình Noel",
+    "name": "Áo Len Gia Đình Noel - Ấm Áp Giòn Gió",
     "category": "Gia đình",
     "price": 550000,
     "sizes": [
@@ -71,7 +71,7 @@
   },
   {
     "id": 6,
-    "name": "Đầm bầu mùa hè",
+    "name": "Set Mẹ Và Bé Gái - Tông Xuyệt Tông Cực Yêu",
     "category": "Mẹ và bé",
     "price": 300000,
     "sizes": [
@@ -85,7 +85,7 @@
   },
   {
     "id": 7,
-    "name": "Áo choàng cho mẹ và bé",
+    "name": "Set Mẹ Và Bé - Đồng Điệu Cho Những Khoảnh Khắc Yêu Thương",
     "category": "Mẹ và bé",
     "price": 420000,
     "sizes": [
@@ -99,7 +99,7 @@
   },
   {
     "id": 8,
-    "name": "Bộ đồ ngủ mẹ và bé",
+    "name": "Set Đồ Dạo Phố Cho Mẹ Và Bé - Phong Cách Thời Thượng",
     "category": "Mẹ và bé",
     "price": 350000,
     "sizes": [
@@ -113,7 +113,7 @@
   },
   {
     "id": 9,
-    "name": "Áo thun đôi mẹ và con",
+    "name": "Áo Thun Đôi Mẹ Và Con - Gắn Kết Yêu Thương",
     "category": "Mẹ và bé",
     "price": 280000,
     "sizes": [
@@ -127,7 +127,7 @@
   },
   {
     "id": 10,
-    "name": "Bộ váy mẹ và bé công chúa",
+    "name": "Bộ Váy Mẹ Và Bé Công Chúa - Vẻ Đẹp Lộng Lẫy",
     "category": "Mẹ và bé",
     "price": 500000,
     "sizes": [
@@ -141,7 +141,7 @@
   },
   {
     "id": 11,
-    "name": "Áo sơ mi bé trai",
+    "name": "Set Bé Trai Đơn Giản - Thoải Mái Vận Động",
     "category": "Bé trai",
     "price": 220000,
     "sizes": [
@@ -155,7 +155,7 @@
   },
   {
     "id": 12,
-    "name": "Áo thun siêu nhân bé trai",
+    "name": "Set Đồ Bé Trai Năng Động Tay Ngắn Quần Dài",
     "category": "Bé trai",
     "price": 180000,
     "sizes": [
@@ -169,7 +169,7 @@
   },
   {
     "id": 13,
-    "name": "Bộ thể thao bé trai",
+    "name": "Bộ Thể Thao Bé Trai - Năng Động Cả Ngày",
     "category": "Bé trai",
     "price": 250000,
     "sizes": [
@@ -183,7 +183,7 @@
   },
   {
     "id": 14,
-    "name": "Áo khoác gió bé trai",
+    "name": "Áo Khoác Gió Bé Trai - Chống Gió Hiệu Quả",
     "category": "Bé trai",
     "price": 300000,
     "sizes": [
@@ -197,7 +197,7 @@
   },
   {
     "id": 15,
-    "name": "Áo polo bé trai",
+    "name": "Áo Polo Bé Trai - Phong Cách Thể Thao",
     "category": "Bé trai",
     "price": 200000,
     "sizes": [
@@ -211,7 +211,7 @@
   },
   {
     "id": 16,
-    "name": "Đầm công chúa bé gái",
+    "name": "Set Đồ Bé Gái Siêu Xinh - Mềm Mại & Dễ Thương",
     "category": "Bé gái",
     "price": 280000,
     "sizes": [
@@ -225,7 +225,7 @@
   },
   {
     "id": 17,
-    "name": "Áo khoác hồng bé gái",
+    "name": "Áo Khoác Hồng Bé Gái - Dễ Thương Phong Cách",
     "category": "Bé gái",
     "price": 320000,
     "sizes": [
@@ -239,7 +239,7 @@
   },
   {
     "id": 18,
-    "name": "Bộ váy hè bé gái",
+    "name": "Bộ Váy Hè Bé Gái - Mát Mẻ Vui Tươi",
     "category": "Bé gái",
     "price": 260000,
     "sizes": [
@@ -253,7 +253,7 @@
   },
   {
     "id": 19,
-    "name": "Áo thun mèo dễ thương",
+    "name": "Áo Thun Mèo Dễ Thương - Kiểu Dáng Thời Trang",
     "category": "Bé gái",
     "price": 190000,
     "sizes": [
@@ -267,7 +267,7 @@
   },
   {
     "id": 20,
-    "name": "Đầm dạ hội bé gái",
+    "name": "Đầm Dạ Hội Bé Gái - Lộng Lẫy Tiệc Tùng",
     "category": "Bé gái",
     "price": 450000,
     "sizes": [
@@ -281,7 +281,7 @@
   },
   {
     "id": 21,
-    "name": "Áo đôi tình nhân",
+    "name": "Đồ Đôi Nam Nữ - Phối Tông Cực Đẹp",
     "category": "Đồ đôi",
     "price": 400000,
     "sizes": [
@@ -295,7 +295,7 @@
   },
   {
     "id": 22,
-    "name": "Áo khoác đôi mùa đông",
+    "name": "Áo Khoác Đôi Mùa Đông - Ấm Áp Ngọt Ngào",
     "category": "Đồ đôi",
     "price": 520000,
     "sizes": [
@@ -309,7 +309,7 @@
   },
   {
     "id": 23,
-    "name": "Áo thun đôi dễ thương",
+    "name": "Áo Thun Đôi Dễ Thương - Tình Cảm Ngọt Ngào",
     "category": "Đồ đôi",
     "price": 300000,
     "sizes": [
@@ -323,7 +323,7 @@
   },
   {
     "id": 24,
-    "name": "Áo sơ mi đôi công sở",
+    "name": "Áo Sơ Mi Đôi Công Sở - Thanh Lịch Chuyên Nghiệp",
     "category": "Đồ đôi",
     "price": 450000,
     "sizes": [
@@ -337,7 +337,7 @@
   },
   {
     "id": 25,
-    "name": "Áo hoodie đôi cá tính",
+    "name": "Áo Hoodie Đôi Cá Tính - Phong Cách Trẻ Trung",
     "category": "Đồ đôi",
     "price": 480000,
     "sizes": [
