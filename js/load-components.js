@@ -1,7 +1,7 @@
 async function loadPart(target, file, position = "beforeend") {
   let response = await fetch(file);
   let html = await response.text();
-  document.insertAdjacentHTML(position, html);
+  target.insertAdjacentHTML(position, html);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

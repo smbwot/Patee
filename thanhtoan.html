@@ -4,23 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanh Toán - Thời Trang Gia Đình Pate</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/GiaBao.css"> 
+    <title>Thanh Toán - Thời Trang Gia Đình Patee</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="checkout-container">
         <!-- Phần 1: Thông Tin Giao Hàng -->
-        <div class="shipping-info">
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo Thời Trang Gia Đình Pate">
-                <h1>Thời Trang Gia Đình Pate</h1>
+        <div class="shipping-info checkout-section">
+            <div class="checkout-logo">
+                <img src="./assets/images/logo.png" alt="Logo Thời Trang Gia Đình Patee">
+                <h1>Thời Trang Gia Đình Patee</h1>
             </div>
             <h2>Thông Tin Giao Hàng</h2>
-            <form>
+            <form class="checkout-form">
                 <div class="form-group">
                     <label for="fullName">Họ và tên *</label>
                     <input type="text" id="fullName" placeholder="Họ và tên" required>
@@ -124,7 +125,7 @@
         </div>
 
         <!-- Phần 2: Phương Thức Thanh Toán -->
-        <div class="payment-method">
+        <div class="payment-method checkout-section">
             <h2>Phương Thức Thanh Toán</h2>
             <div class="radio-group">
                 <label class="radio-container">
@@ -152,28 +153,24 @@
 
         <!-- Phần 3: Tóm tắt đơn hàng -->
         <div class="order-summary">
-            <h3>Đơn Hàng (1 sản phẩm)</h3>
-            <div class="product-item">
-                <img src="https://via.placeholder.com/50x50" alt="Áo Polo">
-                <div class="product-details">
-                    <p>863 5099 Bộ K QB ACT DK polo - 6-7 - Xanh mint</p>
-                    <p class="price">124,000 đ</p>
-                </div>
+            <h3>Đơn Hàng (<span id="cart-count">0</span> sản phẩm)</h3>
+            <div id="cart-items-container">
+                <!-- Cart items will be dynamically loaded here -->
             </div>
             <div class="coupon-section">
                 <input type="text" placeholder="Mã giảm giá %">
                 <button class="apply-coupon-btn">Sử dụng</button>
             </div>
             <div class="summary-details">
-                <p>Tạm tính: <span>124,000 đ</span></p>
-                <p>Phí vận chuyển: <span>0 đ</span></p>
+                <p>Tạm tính: <span id="subtotal">0 đ</span></p>
+                <p>Phí vận chuyển: <span id="shipping-fee">0 đ</span></p>
                 <i class="login-prompt" style="text-align: center;">Vui lòng <a
                         href="https://youtu.be/dQw4w9WgXcQ?si=4fk_OQqhzK0sSlI8">Đăng nhập</a> để tích điểm</i>
-                <p class="total-price">Tổng cộng: <span>124,000 đ</span></p>
-                <p class="free-ship-note">Chỉ cần thêm 376,000 đ để được FREE SHIP</p>
+                <p class="total-price">Tổng cộng: <span id="total-price">0 đ</span></p>
+                <p class="free-ship-note" id="free-ship-note" style="display: none;">Chỉ cần thêm <span id="remaining-for-free-ship">0 đ</span> để được FREE SHIP</p>
             </div>
             <div class="actions">
-                <a href="#" class="back-to-cart">
+                <a href="index.html" class="back-to-cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-chevron-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -194,6 +191,10 @@
         </div>
     </div>
 
+    <!-- Scripts -->
+    <script src="./js/cart.js"></script>
+    <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
         const radios = document.querySelectorAll('input[name="payment"]');
         const qrBox = document.getElementById('qrBox');
@@ -207,11 +208,13 @@
                 }
             });
         });
-
-
     </script>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Load tổng order
+            loadOrderSummary();
+
             const completeOrderBtn = document.getElementById('completeOrderBtn');
             const completionMessage = document.getElementById('completionMessage');
 
@@ -219,13 +222,97 @@
                 // Hiển thị thông báo
                 completionMessage.classList.add('show');
 
-                // Tự động ẩn sau 3 giây
+                // Tự động ẩn sau 2 giây
                 setTimeout(() => {
                     completionMessage.classList.remove('show');
-                }, 2000); // 3000 miligiây = 3 giây
+                }, 2000);
             });
         });
 
+        function loadOrderSummary() {
+            const cartItems = getCartItems();
+            const cartItemsContainer = document.getElementById('cart-items-container');
+            const cartCount = document.getElementById('cart-count');
+            const subtotal = document.getElementById('subtotal');
+            const shippingFee = document.getElementById('shipping-fee');
+            const totalPrice = document.getElementById('total-price');
+            const freeShipNote = document.getElementById('free-ship-note');
+            const remainingForFreeShip = document.getElementById('remaining-for-free-ship');
+
+            // Clear existing items
+            cartItemsContainer.innerHTML = '';
+
+            if (cartItems.length === 0) {
+                cartItemsContainer.innerHTML = '<p style="text-align: center; color: #666;">Giỏ hàng trống</p>';
+                cartCount.textContent = '0';
+                subtotal.textContent = '0 đ';
+                shippingFee.textContent = '0 đ';
+                totalPrice.textContent = '0 đ';
+                freeShipNote.style.display = 'none';
+                return;
+            }
+
+            // Tổng tiền
+            let subtotalAmount = 0;
+            cartItems.forEach(item => {
+                subtotalAmount += item.price * item.qty;
+            });
+
+            // Freeship nếu hơn 500k
+            const shippingAmount = subtotalAmount >= 500000 ? 0 : 30000;
+            const totalAmount = subtotalAmount + shippingAmount;
+
+            // Update cart count
+            let totalItems = 0;
+            cartItems.forEach(item => {
+                totalItems += item.qty;
+            });
+            cartCount.textContent = totalItems;
+
+            // Display cart items
+            cartItems.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'product-item';
+                itemElement.innerHTML = `
+                    <img src="${item.image || './assets/images/placeholder.jpg'}" alt="${item.name}">
+                    <div class="product-details">
+                        <p>${item.name} ${item.size ? `(Size: ${item.size})` : ''} x ${item.qty}</p>
+                        <p class="price">${formatPrice(item.price * item.qty)}</p>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+            });
+
+            // Update pricing
+            subtotal.textContent = formatPrice(subtotalAmount);
+            shippingFee.textContent = shippingAmount === 0 ? 'Miễn phí' : formatPrice(shippingAmount);
+            totalPrice.textContent = formatPrice(totalAmount);
+
+            // Show/hide free shipping note
+            if (subtotalAmount < 500000 && shippingAmount > 0) {
+                const remaining = 500000 - subtotalAmount;
+                remainingForFreeShip.textContent = formatPrice(remaining);
+                freeShipNote.style.display = 'block';
+            } else {
+                freeShipNote.style.display = 'none';
+            }
+        }
+
+        function getCartItems() {
+            try {
+                return JSON.parse(localStorage.getItem('cart_items') || '[]');
+            } catch {
+                return [];
+            }
+        }
+
+        function formatPrice(price) {
+            try {
+                return new Intl.NumberFormat('vi-VN').format(price) + '₫';
+            } catch (e) {
+                return price + '₫';
+            }
+        }
     </script>
 </body>
 
