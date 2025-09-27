@@ -1,4 +1,3 @@
-
 // Import Products JSON
 function loadProducts() {
     fetch("./data/products.json")
@@ -76,34 +75,16 @@ function createProductCard(product, badgeType) {
     return card;
 }
 
+function CountdownTimer() {
+    const targetDate = new Date(Date.now() + (120 * 60 * 1000)); // 2 hours
 
-// Counter
-class CountdownTimer {
-    constructor() {
-        this.targetDate = new Date(Date.now() + (120 * 60 * 1000)); // 2 giờ
-
-        this.elements = {
-            hours: document.getElementById('hours'),
-            minutes: document.getElementById('minutes'),
-            seconds: document.getElementById('seconds')
-        };
-
-        this.init();
-    }
-
-    init() {
-        this.updateTimer();
-        setInterval(() => this.updateTimer(), 1000); // Update mỗi giây
-    }
-
-    updateTimer() {
-        const now = new Date();
-        const timeLeft = this.targetDate - now;
+    function updateTimer() {
+        const timeLeft = targetDate - new Date();
 
         if (timeLeft <= 0) {
-            this.elements.hours.textContent = '0';
-            this.elements.minutes.textContent = '0';
-            this.elements.seconds.textContent = '0';
+            document.getElementById('hours').textContent = '00';
+            document.getElementById('minutes').textContent = '00';
+            document.getElementById('seconds').textContent = '00';
             return;
         }
 
@@ -111,16 +92,19 @@ class CountdownTimer {
         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        this.elements.hours.textContent = hours.toString().padStart(2, '0');
-        this.elements.minutes.textContent = minutes.toString().padStart(2, '0');
-        this.elements.seconds.textContent = seconds.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
     }
+
+    updateTimer();
+    setInterval(updateTimer, 1000);
 }
 
 // LOAD
 document.addEventListener("DOMContentLoaded", () => {
     loadProducts();
-    new CountdownTimer();
+    CountdownTimer();
     updateCartCount();
 
     // Back to top button

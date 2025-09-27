@@ -114,23 +114,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
 }
 
 .search-btn:hover {
-    background: #157347;
-    transform: translateY(-50%) scale(1.05);
+    background: var(--ui-color);
 }
-
 
 /* -------------- Icon Buttons -------------- */
 .btn-link {
     text-decoration: none !important;
-    transition: all 0.3s ease;
-}
-
-.btn-link:hover {
-    transform: translateY(-1px);
 }
 
 /* -------------- Banner Section -------------- */
@@ -335,7 +327,6 @@ body {
     font-size: 12px;
 }
 
-
 /* View More Button */
 .btn-view-more {
     background: rgba(255, 255, 255, 0.2);
@@ -351,7 +342,7 @@ body {
 .btn-view-more:hover {
     background: white;
     color: var(--coral-pink);
-    border-color: white; 
+    border-color: white;
 }
 
 /* -------------- Promo Section -------------- */
@@ -391,26 +382,6 @@ body {
     color: white;
 }
 
-/* -------------- Footer --------------  */
-.footer {
-    background-color: var(--light-gray);
-    color: var(--text-dark);
-    margin-top: auto;
-}
-
-.footer-main {
-    padding: 40px 0 30px;
-}
-
-.footer-title {
-    color: var(--text-dark);
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
 .newsletter-form {
     margin-bottom: 20px;
 }
@@ -444,6 +415,27 @@ body {
     color: var(--text-dark);
     padding: 10px 15px;
 }
+
+/* -------------- Footer --------------  */
+.footer {
+    background-color: var(--light-gray);
+    color: var(--text-dark);
+    margin-top: auto;
+}
+
+.footer-main {
+    padding: 40px 0 30px;
+}
+
+.footer-title {
+    color: var(--text-dark);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 
 .app-title {
     color: #ffffff;
@@ -554,9 +546,11 @@ body {
     scroll-margin-top: 100px;
 }
 
-/* =============================================================================
+/* 
+   =============================================================================
    Trang Thanh Toán - Gia Bảo
-   ============================================================================= */
+   ============================================================================= 
+*/
 .checkout-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1.2fr;
@@ -597,6 +591,7 @@ body {
     color: var(--coral-pink);
     font-weight: 700;
 }
+
 
 .checkout-form .form-group {
     margin-bottom: 18px;
@@ -949,7 +944,8 @@ body {
     margin: 0;
 }
 
-/* =============================================================================
+/* 
+   =============================================================================
    Trang Sản Phẩm - Mỹ Linh
    =============================================================================
 */

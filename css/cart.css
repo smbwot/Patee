@@ -1,4 +1,3 @@
-/* -------------- Cart Badge -------------- */
 .cart-count {
     font-size: 11px;
     min-width: 18px;
@@ -6,7 +5,6 @@
     line-height: 11px;
 }
 
-/* -------------- Cart Styles -------------- */
 .cart {
     position: fixed;
     top: 0;
@@ -22,16 +20,6 @@
 .cart.active {
     opacity: 1;
     visibility: visible;
-}
-
-.cart-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
 }
 
 .cart-sidebar {
@@ -204,40 +192,7 @@
     background: #f8d7da;
 }
 
-/* -------------- Responsive Design -------------- */
-@media (max-width: 576px) {
-    .cart-sidebar {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .cart-item img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .cart-item-name {
-        font-size: 12px;
-    }
-
-    .cart-item-price {
-        font-size: 11px;
-    }
-
-    .qty-btn {
-        width: 25px;
-        height: 25px;
-        font-size: 12px;
-    }
-
-    .cart-qty-display {
-        width: 40px;
-        height: 25px;
-        font-size: 12px;
-    }
-}
-
-/* -------------- Animation Enhancements -------------- */
+/* -------------- Animation -------------- */
 @keyframes slideInRight {
     from {
         transform: translateX(100%);
@@ -266,7 +221,7 @@
     animation: fadeIn 0.3s ease-out;
 }
 
-/* -------------- Empty Cart State -------------- */
+/* -------------- Empty Cart -------------- */
 .cart-empty {
     text-align: center;
     padding: 40px 20px;
@@ -284,11 +239,11 @@
     font-size: 14px;
 }
 
-/* -------------- Cart Footer Actions -------------- */
+/* -------------- Cart Footer -------------- */
 .cart-footer .btn {
     width: 100%;
     margin-bottom: 10px;
-    min-height: 44px; /* Ensure consistent height */
+    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,7 +253,6 @@
     margin-bottom: 0;
 }
 
-/* Ensure consistent button height across different button types */
 .cart-footer .btn-outline-secondary,
 .cart-footer .btn-success {
     height: 44px;
