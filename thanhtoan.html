@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Thời Trang Gia Đình Patee</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+    <div class="checkout-container">
+        <!-- Phần 1: Thông Tin Giao Hàng -->
+        <div class="shipping-info checkout-section">
+            <div class="checkout-logo">
+                <img src="./assets/images/logo.png" alt="Logo Thời Trang Gia Đình Patee">
+                <h1>Thời Trang Gia Đình Patee</h1>
+            </div>
+            <h2>Thông Tin Giao Hàng</h2>
+            <form class="checkout-form">
+                <div class="form-group">
+                    <label for="fullName">Họ và tên *</label>
+                    <input type="text" id="fullName" placeholder="Họ và tên" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" placeholder="Số điện thoại">
+                </div>
+                <div class="form-group">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" id="address" placeholder="Địa chỉ">
+                </div>
+                <div class="form-group">
+                    <label for="province">Tỉnh/Thành phố</label>
+                    <select id="province">
+                        <option value="">Chọn Tỉnh/thành phố</option>
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="hcm">TP. Hồ Chí Minh</option>
+                        <option value="da-nang">Đà Nẵng</option>
+                        <option value="bac-kan">Bắc Kạn</option>
+                        <option value="bac-lieu">Bạc Liêu</option>
+                        <option value="bac-ninh">Bắc Ninh</option>
+                        <option value="ben-tre">Bến Tre</option>
+                        <option value="binh-dinh">Bình Định</option>
+                        <option value="binh-duong">Bình Dương</option>
+                        <option value="binh-phuoc">Bình Phước</option>
+                        <option value="binh-thuan">Bình Thuận</option>
+                        <option value="ca-mau">Cà Mau</option>
+                        <option value="cao-bang">Cao Bằng</option>
+                        <option value="dak-lak">Đắk Lắk</option>
+                        <option value="dak-nong">Đắk Nông</option>
+                        <option value="dien-bien">Điện Biên</option>
+                        <option value="dong-nai">Đồng Nai</option>
+                        <option value="dong-thap">Đồng Tháp</option>
+                        <option value="gia-lai">Gia Lai</option>
+                        <option value="ha-giang">Hà Giang</option>
+                        <option value="ha-nam">Hà Nam</option>
+                        <option value="ha-tinh">Hà Tĩnh</option>
+                        <option value="hai-duong">Hải Dương</option>
+                        <option value="hau-giang">Hậu Giang</option>
+                        <option value="hoa-binh">Hòa Bình</option>
+                        <option value="hung-yen">Hưng Yên</option>
+                        <option value="khanh-hoa">Khánh Hòa</option>
+                        <option value="kien-giang">Kiên Giang</option>
+                        <option value="kon-tum">Kon Tum</option>
+                        <option value="lai-chau">Lai Châu</option>
+                        <option value="lam-dong">Lâm Đồng</option>
+                        <option value="lang-son">Lạng Sơn</option>
+                        <option value="lao-cai">Lào Cai</option>
+                        <option value="long-an">Long An</option>
+                        <option value="nam-dinh">Nam Định</option>
+                        <option value="nghe-an">Nghệ An</option>
+                        <option value="ninh-binh">Ninh Bình</option>
+                        <option value="ninh-thuan">Ninh Thuận</option>
+                        <option value="phu-tho">Phú Thọ</option>
+                        <option value="phu-yen">Phú Yên</option>
+                        <option value="quang-binh">Quảng Bình</option>
+                        <option value="quang-nam">Quảng Nam</option>
+                        <option value="quang-ngai">Quảng Ngãi</option>
+                        <option value="quang-ninh">Quảng Ninh</option>
+                        <option value="quang-tri">Quảng Trị</option>
+                        <option value="soc-trang">Sóc Trăng</option>
+                        <option value="son-la">Sơn La</option>
+                        <option value="tay-ninh">Tây Ninh</option>
+                        <option value="thai-binh">Thái Bình</option>
+                        <option value="thai-nguyen">Thái Nguyên</option>
+                        <option value="thanh-hoa">Thanh Hóa</option>
+                        <option value="thua-thien-hue">Thừa Thiên - Huế</option>
+                        <option value="tien-giang">Tiền Giang</option>
+                        <option value="tra-vinh">Trà Vinh</option>
+                        <option value="tuyen-quang">Tuyên Quang</option>
+                        <option value="vinh-long">Vĩnh Long</option>
+                        <option value="vinh-phuc">Vĩnh Phúc</option>
+                        <option value="yen-bai">Yên Bái</option>
+                        <!-- Thêm các tỉnh khác -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="district">Quận/Huyện</label>
+                    <select id="district">
+                        <option value="">Chọn Quận/Huyện</option>
+                        <!-- Các huyện sẽ được load bằng JS -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ward">Phường/Xã</label>
+                    <select id="ward">
+                        <option value="">Chọn Phường/Xã</option>
+                        <!-- Các xã sẽ được load bằng JS -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="note">Ghi chú</label>
+                    <textarea id="note" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <!-- Phần 2: Phương Thức Thanh Toán -->
+        <div class="payment-method checkout-section">
+            <h2>Phương Thức Thanh Toán</h2>
+            <div class="radio-group">
+                <label class="radio-container">
+                    <input type="radio" name="payment" value="cod" checked>
+                    Thanh toán khi nhận hàng (COD)
+                    <span class="checkmark"></span>
+                </label>
+                <label class="radio-container">
+                    <input type="radio" name="payment" value="transfer">
+                    Thanh toán chuyển khoản
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="qr-box" id="qrBox">
+                <h2>Quét mã QR </br> để thanh toán</h2>
+                <!-- thay ảnh QR thật của cháu vô đây -->
+                <img src="./assets/images/QR.jpg" alt="QR Code">
+                <p>Tên tài khoản: Tấn Hoàng Gia Bảo</p>
+                <p>Ngân hàng : Vietcombank</p>
+                <p>Số tài khoản: 1044460551</p>
+
+            </div>
+        </div>
+
+        <!-- Phần 3: Tóm tắt đơn hàng -->
+        <div class="order-summary">
+            <h3>Đơn Hàng (<span id="cart-count">0</span> sản phẩm)</h3>
+            <div id="cart-items-container">
+                <!-- Cart items will be dynamically loaded here -->
+            </div>
+            <div class="coupon-section">
+                <input type="text" placeholder="Mã giảm giá %">
+                <button class="apply-coupon-btn">Sử dụng</button>
+            </div>
+            <div class="summary-details">
+                <p>Tạm tính: <span id="subtotal">0 đ</span></p>
+                <p>Phí vận chuyển: <span id="shipping-fee">0 đ</span></p>
+                <i class="login-prompt" style="text-align: center;">Vui lòng <a
+                        href="https://youtu.be/dQw4w9WgXcQ?si=4fk_OQqhzK0sSlI8">Đăng nhập</a> để tích điểm</i>
+                <p class="total-price">Tổng cộng: <span id="total-price">0 đ</span></p>
+                <p class="free-ship-note" id="free-ship-note" style="display: none;">Chỉ cần thêm <span id="remaining-for-free-ship">0 đ</span> để được FREE SHIP</p>
+            </div>
+            <div class="actions">
+                <a href="index.html" class="back-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Giỏ hàng
+                </a>
+                <button class="complete-order-button" id="completeOrderBtn">Hoàn tất đặt hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay Thanh Toán Thành Công (Mặc định ẩn, sẽ hiển thị bằng JS) -->
+    <div class="completion-message" id="completionMessage">
+        <div class="completion-box">
+            <span class="tick">✔</span>
+            <p>Hoàn tất đơn hàng</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/cart.js"></script>
+    <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const radios = document.querySelectorAll('input[name="payment"]');
+        const qrBox = document.getElementById('qrBox');
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', function () {
+                if (this.value === "transfer") {
+                    qrBox.style.display = "block"; // hiện hình QR
+                } else {
+                    qrBox.style.display = "none"; // ẩn QR
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load tổng order
+            loadOrderSummary();
+
+            const completeOrderBtn = document.getElementById('completeOrderBtn');
+            const completionMessage = document.getElementById('completionMessage');
+
+            completeOrderBtn.addEventListener('click', () => {
+                // Hiển thị thông báo
+                completionMessage.classList.add('show');
+
+                // Tự động ẩn sau 2 giây
+                setTimeout(() => {
+                    completionMessage.classList.remove('show');
+                }, 2000);
+            });
+        });
+
+        function loadOrderSummary() {
+            const cartItems = getCartItems();
+            const cartItemsContainer = document.getElementById('cart-items-container');
+            const cartCount = document.getElementById('cart-count');
+            const subtotal = document.getElementById('subtotal');
+            const shippingFee = document.getElementById('shipping-fee');
+            const totalPrice = document.getElementById('total-price');
+            const freeShipNote = document.getElementById('free-ship-note');
+            const remainingForFreeShip = document.getElementById('remaining-for-free-ship');
+
+            // Clear existing items
+            cartItemsContainer.innerHTML = '';
+
+            if (cartItems.length === 0) {
+                cartItemsContainer.innerHTML = '<p style="text-align: center; color: #666;">Giỏ hàng trống</p>';
+                cartCount.textContent = '0';
+                subtotal.textContent = '0 đ';
+                shippingFee.textContent = '0 đ';
+                totalPrice.textContent = '0 đ';
+                freeShipNote.style.display = 'none';
+                return;
+            }
+
+            // Tổng tiền
+            let subtotalAmount = 0;
+            cartItems.forEach(item => {
+                subtotalAmount += item.price * item.qty;
+            });
+
+            // Freeship nếu hơn 500k
+            const shippingAmount = subtotalAmount >= 500000 ? 0 : 30000;
+            const totalAmount = subtotalAmount + shippingAmount;
+
+            // Update cart count
+            let totalItems = 0;
+            cartItems.forEach(item => {
+                totalItems += item.qty;
+            });
+            cartCount.textContent = totalItems;
+
+            // Display cart items
+            cartItems.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'product-item';
+                itemElement.innerHTML = `
+                    <img src="${item.image || './assets/images/placeholder.jpg'}" alt="${item.name}">
+                    <div class="product-details">
+                        <p>${item.name} ${item.size ? `(Size: ${item.size})` : ''} x ${item.qty}</p>
+                        <p class="price">${formatPrice(item.price * item.qty)}</p>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+            });
+
+            // Update pricing
+            subtotal.textContent = formatPrice(subtotalAmount);
+            shippingFee.textContent = shippingAmount === 0 ? 'Miễn phí' : formatPrice(shippingAmount);
+            totalPrice.textContent = formatPrice(totalAmount);
+
+            // Show/hide free shipping note
+            if (subtotalAmount < 500000 && shippingAmount > 0) {
+                const remaining = 500000 - subtotalAmount;
+                remainingForFreeShip.textContent = formatPrice(remaining);
+                freeShipNote.style.display = 'block';
+            } else {
+                freeShipNote.style.display = 'none';
+            }
+        }
+
+        function getCartItems() {
+            try {
+                return JSON.parse(localStorage.getItem('cart_items') || '[]');
+            } catch {
+                return [];
+            }
+        }
+
+        function formatPrice(price) {
+            try {
+                return new Intl.NumberFormat('vi-VN').format(price) + '₫';
+            } catch (e) {
+                return price + '₫';
+            }
+        }
+    </script>
+</body>
+
+</html>

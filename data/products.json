@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "name": "Set Đồ Gia Đình Mặc Nhà - Gắn Kết Thêm Yêu Thương",
+    "category": "Gia đình",
+    "price": 350000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/gia_dinh_1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
+    "category": "Gia đình",
+    "price": 380000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/gia_dinh_2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Áo Thun Gia Đình Du Lịch - Phong Cách Tự Do",
+    "category": "Gia đình",
+    "price": 320000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/gia_dinh_3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
+    "category": "Gia đình",
+    "price": 300000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/gia_dinh_4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Set Gia Đình Cho Ngày Cuối Tuần Vui Vẻ",
+    "category": "Gia đình",
+    "price": 350000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/gia_dinh_5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Set Mẹ Và Bé Gái - Tông Xuyệt Tông Cực Yêu",
+    "category": "Mẹ và bé",
+    "price": 200000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/me_be_1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Set Mẹ Và Bé - Đồng Điệu Khoảnh Khắc Yêu Thương",
+    "category": "Mẹ và bé",
+    "price": 220000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/me_be_2.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Set Đồ Dạo Phố Mẹ Và Bé - Phong Cách Thời Thượng",
+    "category": "Mẹ và bé",
+    "price": 250000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/me_be_3.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Áo Thun Đôi Mẹ Và Con - Gắn Kết Yêu Thương",
+    "category": "Mẹ và bé",
+    "price": 280000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/me_be_4.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Bộ Váy Mẹ Và Bé Công Chúa - Vẻ Đẹp Lộng Lẫy",
+    "category": "Mẹ và bé",
+    "price": 200000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/me_be_5.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Set Bé Trai Đơn Giản - Thoải Mái Vận Động",
+    "category": "Bé trai",
+    "price": 220000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/be_trai_1.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Set Đồ Bé Trai Năng Động Tay Ngắn Quần Dài",
+    "category": "Bé trai",
+    "price": 180000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/be_trai_2.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Bộ Thể Thao Bé Trai - Năng Động Cả Ngày",
+    "category": "Bé trai",
+    "price": 250000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/be_trai_3.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Áo Polo Bé Trai - Phong Cách Thể Thao",
+    "category": "Bé trai",
+    "price": 200000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/be_trai_4.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Áo Polo Bé Trai - Phong Cách Thể Thao",
+    "category": "Bé trai",
+    "price": 200000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/be_trai_5.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Set Đồ Bé Gái Siêu Xinh - Mềm Mại & Dễ Thương",
+    "category": "Bé gái",
+    "price": 280000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/be_gai_1.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Áo Khoác Hồng Bé Gái - Dễ Thương Phong Cách",
+    "category": "Bé gái",
+    "price": 220000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/be_gai_2.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Bộ Váy Hè Bé Gái - Mát Mẻ Vui Tươi",
+    "category": "Bé gái",
+    "price": 260000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/be_gai_3.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Áo Thun Mèo Dễ Thương - Kiểu Dáng Thời Trang",
+    "category": "Bé gái",
+    "price": 190000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/be_gai_4.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Đầm Dạ Hội Bé Gái - Lộng Lẫy Tiệc Tùng",
+    "category": "Bé gái",
+    "price": 350000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/be_gai_5.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Đồ Đôi Nam Nữ - Phối Tông Cực Đẹp",
+    "category": "Đồ đôi",
+    "price": 300000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/do_doi_1.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Áo Khoác Đôi Mùa Đông - Ấm Áp Ngọt Ngào",
+    "category": "Đồ đôi",
+    "price": 320000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": true,
+    "image": "./assets/images/do_doi_2.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Áo Thun Đôi Dễ Thương - Tình Cảm Ngọt Ngào",
+    "category": "Đồ đôi",
+    "price": 300000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/do_doi_3.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Áo Sơ Mi Đôi - Thanh Lịch Chuyên Nghiệp",
+    "category": "Đồ đôi",
+    "price": 350000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/do_doi_4.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Áo Hoodie Đôi Cá Tính - Phong Cách Trẻ Trung",
+    "category": "Đồ đôi",
+    "price": 380000,
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "isSale": false,
+    "image": "./assets/images/do_doi_5.jpg"
+  }
+]

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Nhập</title>
+  <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+      max-width: 450px;
+      margin: 60px auto;
+      background: #ebf5f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-check-label {
+      font-size: 14px;
+    }
+
+    .btn-login {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .btn-login:hover {
+      background-color: #e87fb0;
+    }
+
+    .link-custom {
+      font-size: 14px;
+    }
+
+    .link-custom a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .tonggle-password {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h3 class="login-title">ĐĂNG NHẬP</h3>
+    <p class="text-center">Vui lòng nhập thông tin và tận hưởng trải nghiệm cùng PaTee</p>
+
+    <form>
+      <!-- Email/Số điện thoại -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email / Số điện thoại <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="email" placeholder="Nhập email hoặc số điện thoại">
+      </div>
+
+      <!-- Mật khẩu -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Mật khẩu <span class="text-danger">*</span></label>
+        <div class="input-group">
+          <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+          <span class="input-group-text toggle-password"><i class="bi bi-eye-slash"></i></span>
+        </div>
+      </div>
+
+      <!-- Ghi nhớ đăng nhập -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="remember">
+        <label for="remember" class="form-check-label">Nhớ thông tin đăng nhập </label>
+      </div>
+
+      <!-- Liên kết -->
+      <div class="d-flex justify-content-between link-custom mb-3">
+        <span>Quý khách chưa có tài khoản? <a href="./dangky.html">ĐĂNG KÝ</a></span>
+        <a href="./quenmatkhau.html">QUÊN MẬT KHẨU?</a>
+      </div>
+
+      <!-- Nút đăng nhập -->
+      <button type="submit" class="btn btn-login">ĐĂNG NHẬP</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="./assets/bootstrap-icons-1.13.1/bootstrap-icons.css">
+  <script>
+    const togglePassword = document.querySelector(".toggle-password i");
+    const passwordInput = document.getElementById("password");
+
+    document.querySelector(".toggle-password").addEventListener("click", function () {
+      const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+      passwordInput.setAttribute("type", type);
+      togglePassword.classList.toggle("bi-eye");
+      togglePassword.classList.toggle("bi-eye-slash");
+    });
+  </script>
+</body>
+
+
+
+</html>
