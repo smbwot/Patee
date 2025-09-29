@@ -4,8 +4,7 @@ async function loadPart(target, file, position = "beforeend") {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadPart(document.body, "./partials/header.html", "afterbegin")
-    .then(() => {
+  loadPart(document.body, "./partials/header.html", "afterbegin").then(() => {
       if (typeof updateCartCount === 'function') {
         updateCartCount();
       }

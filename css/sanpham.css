@@ -1,0 +1,208 @@
+/* 
+   =============================================================================
+   Trang Sản Phẩm - Mỹ Linh
+   ============================================================================= 
+*/
+
+/* Trang danh mục sản phẩm */
+.category-page {
+    background: #f9f9f9;
+    padding-bottom: 100px;
+}
+
+/* Tiêu đề trang */
+.category-header {
+    background: #ff7c7c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.category-header h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Layout chính - Menu bên trái, sản phẩm bên phải */
+.category-main-layout {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Menu danh mục bên trái - Cố định khi cuộn */
+.category-menu {
+    width: 260px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+    overflow: hidden;
+}
+
+/* Tiêu đề menu */
+.category-menu h2 {
+    margin: 0;
+    padding: 20px;
+    color: #ff7c7c;
+    font-size: 21px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ff7c7c, #e74c3c);
+    color: white;
+    text-align: center;
+}
+
+/* Container cho các mục menu */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mục menu trong danh sách */
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    width: 100%;
+    gap: 12px;
+    font-size: 15px;
+    color: #2d3436;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Mục cuối cùng không có đường kẻ */
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+/* Hiệu ứng khi di chuột vào menu */
+.menu-item:hover {
+    background-color: rgba(255, 124, 124, 0.1);
+    color: #ff7c7c;
+    transform: translateX(5px);
+}
+
+/* Menu đang được chọn */
+.menu-item.active {
+    background: linear-gradient(135deg, rgba(255, 124, 124, 0.15), rgba(231, 76, 60, 0.1));
+    color: #ff7c7c;
+    font-weight: 600;
+    border-left: 4px solid #ff7c7c;
+}
+
+/* Kích cỡ icon trong menu */
+.menu-item i {
+    font-size: 18px;
+    width: 20px;
+    text-align: center;
+    color: #ff7c7c;
+}
+
+/* Icon đổi màu khi menu được chọn */
+.menu-item.active i {
+    color: #e74c3c;
+}
+
+/* Text trong menu, ràng buộc vị trí - có lẽ ko cần thiết */
+.menu-item span {
+    flex: 1;
+}
+
+/* Lưới sản phẩm bên phải - Chi kiểu grid */
+.category-product-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Chia  cột mỗi cột ít nhất 280px */
+    gap: 20px;
+    padding: 0;
+}
+
+/* Thẻ sản phẩm - Hiệu ứng nổi khi hover */
+.category-product-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+/* Hiệu ứng khi di chuột vào sản phẩm - có thể bỏ nếu phức tạp */
+.category-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cố định hình ảnh sản phẩm */
+.category-product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+    flex-shrink: 0;
+}
+
+/* Tên sản phẩm - Giới hạn 2 dòng nhờ webkit */
+.category-product-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3436;
+    margin: 12px 15px 8px;
+    line-height: 1.4;
+    height: 45px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    flex-shrink: 0;
+}
+
+/* Giá sản phẩm */
+.category-product-card .category-price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 15px 15px;
+}
+
+/* Giá cũ - Gạch ngang cho những sản phẩm SALE */
+.category-old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+/* Nút mua hàng - Bung ra 2 viền trái phải */
+.category-buy-button {
+    margin: 0 15px 15px;
+    padding: 12px 20px;
+    background-color: #ff7c7c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    text-align: center;
+    flex-shrink: 0;
+    width: calc(100% - 30px);
+    display: block;
+}
+
+/* Hiệu ứng khi di chuột vào nút mua - có thể bỏ nếu phức tạp */
+.category-buy-button:hover {
+    background-color: #e74c3c;
+    transform: translateY(-2px);
+}
