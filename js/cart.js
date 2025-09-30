@@ -188,4 +188,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.cart-page')) {
     renderCartItems();
   }
+
+  // Auto-attach cart events to any "Add to Cart" buttons found
+  if (window.cartFunctions && window.cartFunctions.addCartClickEvents) {
+    if (document.querySelector('.btn-add-to-cart')) {
+      window.cartFunctions.addCartClickEvents(document.body);
+    }
+  }
 });

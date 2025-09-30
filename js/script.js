@@ -25,11 +25,6 @@ function renderProducts(products, containerSelector, badgeType) {
         const card = createProductCard(product, badgeType);
         container.insertAdjacentHTML("beforeend", card);
     });
-
-    // Use cartFunctions API for cart event handling
-    if (window.cartFunctions && window.cartFunctions.addCartClickEvents) {
-        window.cartFunctions.addCartClickEvents(container);
-    }
 }
 
 function createProductCard(product, badgeType) {
