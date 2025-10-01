@@ -59,8 +59,8 @@ function createProductCard(product, badgeType) {
                 <div class="product-info">
                     <h6 class="product-title">${product.name}</h6>
                     <div class="product-price">
-                        ${badgeType === "SALE" && product.isSale ? `<span class="price old-price">${(product.price * 1.2).toLocaleString('vi-VN')}₫</span>` : ""}
-                        <span class="price sale-price">${product.currentPrice ? product.currentPrice : product.price.toLocaleString('vi-VN')}₫</span>
+                        ${badgeType === "SALE" ? `<span class="price old-price">${(product.price * 1.2).toLocaleString('vi-VN')}₫</span>` : ""}
+                        <span class="price sale-price">${product.price.toLocaleString('vi-VN')}₫</span>
                     </div>
                 </div>
             </div>
