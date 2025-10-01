@@ -1,10 +1,10 @@
 // Import Products JSON
 function loadProducts() {
     fetch("./data/products.json")
-        .then(function (response) {
+        .then(response => {
             return response.json();
         })
-        .then(function (products) {
+        .then(products => {
             // isSale: true
             const saleProducts = products.filter(product => product.isSale).slice(0, 4);
             renderProducts(saleProducts, "#sale-items .products-json", "SALE");
@@ -21,7 +21,7 @@ function renderProducts(products, containerSelector, badgeType) {
 
     container.innerHTML = "";
 
-    products.forEach(function (product) {
+    products.forEach(product => {
         const card = createProductCard(product, badgeType);
         container.insertAdjacentHTML("beforeend", card);
     });
